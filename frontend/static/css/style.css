@@ -1,1 +1,54 @@
-*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Arial,Helvetica,sans-serif;background:#fff;color:#111}.blue-strip{height:28px;background:#005b8f}.official-nav{height:64px;background:#fff;display:flex;align-items:center;justify-content:center;gap:36px;border-bottom:1px solid #ddd;box-shadow:0 2px 8px rgba(0,0,0,.08);position:relative;z-index:2}.bhu-brand{display:flex;align-items:center;gap:8px;color:#073f6b}.hindi{font-size:13px;line-height:1.05;text-align:right}.round-seal{width:38px;height:38px;border-radius:50%;border:2px solid #d97b3d;color:#d97b3d;display:grid;place-items:center;font-weight:900}.english{font-size:12px;line-height:1.05}.official-nav nav{display:flex;gap:22px;font-size:12px}.official-nav a{color:#111;text-decoration:none;font-weight:600}.dept-site{background:#fff}.photo-hero{height:520px;background:linear-gradient(rgba(255,255,255,.12),rgba(255,255,255,.12)),url('https://www.bhu.ac.in/Site/UnitHomeImage/1_233_3536_7998_DSC_0065.JPG') center/cover no-repeat;position:relative}.hero-title{position:absolute;left:72px;top:58px;color:#00518a;font-size:25px;font-weight:800;text-shadow:0 1px 2px rgba(255,255,255,.7)}.intro-panel{max-width:960px;margin:28px auto;border:1px solid #164e7a}.intro-panel h2{margin:0;background:#164e7a;color:#fff;text-align:center;font-family:Georgia,serif;padding:8px}.intro-panel p{padding:18px 24px;line-height:1.6}.sage-launcher{position:fixed;right:24px;bottom:22px;width:58px;height:58px;border-radius:50%;border:5px solid #e6c777;background:#6d0f15;color:#fff;font-size:24px;box-shadow:0 14px 34px rgba(0,0,0,.35);z-index:50;cursor:pointer}.sage-widget{position:fixed;right:34px;bottom:92px;width:300px;height:455px;background:#fff;color:#222;border-radius:14px;overflow:hidden;border:1px solid rgba(0,0,0,.1);box-shadow:0 18px 52px rgba(0,0,0,.24);z-index:45;transition:.2s;transform-origin:bottom right}.sage-widget.closed{display:none}.sage-widget.minimized{height:56px}.sage-head{height:62px;background:#6d0f15;color:#fff;display:flex;align-items:center;gap:8px;padding:8px 9px}.bot-mark{width:34px;height:34px;border-radius:50%;background:#fff;color:#6d0f15;border:2px solid #e6c777;display:grid;place-items:center}.bot-info{flex:1;line-height:1.05;min-width:0}.bot-info strong{display:block;font-size:13px}.bot-info span{display:block;font-size:9px;opacity:.95;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.bot-info small{font-size:9px;color:#e7f7e5;display:flex;gap:4px;align-items:center;margin-top:2px}#healthDot{width:7px;height:7px;border-radius:50%;background:#f59e0b;display:inline-block}#healthDot.online{background:#22c55e}#healthDot.offline{background:#ef4444}.sage-head button{border:0;background:rgba(255,255,255,.16);color:#fff;width:22px;height:22px;border-radius:7px;cursor:pointer;font-size:16px}.chat-screen{height:calc(100% - 62px);display:flex;flex-direction:column;background:#fff}.chat-body{flex:1;overflow-y:auto;padding:10px 9px 6px;background:#fff}.msg{display:flex;gap:7px;margin-bottom:10px}.msg.user{justify-content:flex-end}.avatar-mini{width:22px;height:22px;border-radius:50%;background:#f6d67e;display:grid;place-items:center;flex:0 0 22px;font-size:12px}.bubble{max-width:86%;font-size:11px;line-height:1.48;padding:10px;border-radius:12px;background:#fff;border:1px solid #e7d7bd;box-shadow:0 2px 10px rgba(0,0,0,.06)}.msg.ai .bubble{border-top-left-radius:4px}.msg.user .bubble{background:#6d0f15;color:#fff;border-color:#6d0f15;border-top-right-radius:4px}.quick-row{display:flex;gap:5px;overflow-x:auto;padding:6px 8px}.quick-row button{white-space:nowrap;border:1px solid #ead8b1;background:#fffaf0;color:#6d0f15;border-radius:999px;padding:6px 8px;font-size:10px;font-weight:700;cursor:pointer}.typing{font-size:10px;color:#777;padding:6px 10px}.typing span{display:inline-block;width:5px;height:5px;border-radius:50%;background:#6d0f15;margin-left:2px;animation:b 1s infinite}.typing span:nth-child(2){animation-delay:.15s}.typing span:nth-child(3){animation-delay:.3s}@keyframes b{50%{transform:translateY(-3px);opacity:.45}}.composer{height:42px;margin:0 8px;border:1px solid #b78a8e;border-radius:9px;display:flex;align-items:center;padding:4px;background:#fff}.composer input{flex:1;border:0;outline:0;font-size:11px;padding:0 8px}.composer button{width:32px;height:32px;border:0;border-radius:8px;background:#6d0f15;color:#fff;cursor:pointer}.powered{font-size:8px;text-align:center;color:#777;margin:5px 0 6px}.copy-btn{display:block;margin-top:6px;border:1px solid #ead8b1;background:#fffaf0;border-radius:7px;color:#6d0f15;font-size:10px;padding:4px 7px;cursor:pointer}.toast-host{position:fixed;top:16px;right:16px;z-index:99}.toast{background:#1f2937;color:white;border-radius:9px;padding:9px 12px;margin-bottom:8px;font-size:12px;box-shadow:0 8px 24px rgba(0,0,0,.25)}@media(max-width:860px){.official-nav nav{display:none}.photo-hero{height:420px}.hero-title{left:24px;font-size:20px}.sage-widget{right:12px;bottom:88px}.sage-launcher{right:16px}}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Arial,Helvetica,sans-serif;background:#fff;color:#111}
+.blue-strip{height:28px;background:#003f6b}
+.official-nav{height:64px;background:#fff;display:flex;align-items:center;justify-content:center;gap:36px;border-bottom:3px solid #00518a;box-shadow:0 2px 8px rgba(0,0,0,.08);position:relative;z-index:2}
+.bhu-brand{display:flex;align-items:center;gap:8px;color:#00518a}
+.hindi{font-size:13px;line-height:1.05;text-align:right;color:#00518a}
+.round-seal{width:38px;height:38px;border-radius:50%;border:2px solid #00518a;color:#00518a;display:grid;place-items:center;font-weight:900}
+.english{font-size:12px;line-height:1.05;color:#00518a}
+.official-nav nav{display:flex;gap:22px;font-size:12px}
+.official-nav a{color:#073f6b;text-decoration:none;font-weight:600}
+.official-nav a:hover{color:#0a6cb0}
+.dept-site{background:#fff}
+.photo-hero{height:340px;background:linear-gradient(120deg,#003f6b 0%,#00518a 55%,#1c84c6 100%);position:relative;display:flex;align-items:flex-end}
+.hero-title{position:absolute;left:72px;bottom:42px;color:#fff;font-size:30px;font-weight:800;max-width:72%;line-height:1.2;text-shadow:0 2px 8px rgba(0,0,0,.35)}
+.intro-panel{max-width:960px;margin:28px auto;border:1px solid #00518a;border-radius:6px;overflow:hidden}
+.intro-panel h2{margin:0;background:#00518a;color:#fff;text-align:center;font-family:Georgia,serif;padding:10px}
+.intro-panel p{padding:18px 24px;line-height:1.6}
+.sage-launcher{position:fixed;right:24px;bottom:22px;width:58px;height:58px;border-radius:50%;border:4px solid #cfe6f5;background:#00518a;color:#fff;font-size:24px;box-shadow:0 14px 34px rgba(0,0,0,.35);z-index:50;cursor:pointer}
+.sage-widget{position:fixed;right:34px;bottom:92px;width:320px;height:480px;background:#fff;color:#222;border-radius:14px;overflow:hidden;border:1px solid rgba(0,0,0,.1);box-shadow:0 18px 52px rgba(0,0,0,.24);z-index:45;transition:.2s;transform-origin:bottom right}
+.sage-widget.closed{display:none}
+.sage-widget.minimized{height:62px}
+.sage-head{height:62px;background:#00518a;color:#fff;display:flex;align-items:center;gap:8px;padding:8px 9px}
+.bot-mark{width:34px;height:34px;border-radius:50%;background:#fff;color:#00518a;border:2px solid #cfe6f5;display:grid;place-items:center}
+.bot-info{flex:1;line-height:1.05;min-width:0}
+.bot-info strong{display:block;font-size:13px}
+.bot-info span{display:block;font-size:9px;opacity:.95;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bot-info small{font-size:9px;color:#d6ecfb;display:flex;gap:4px;align-items:center;margin-top:2px}
+#healthDot{width:7px;height:7px;border-radius:50%;background:#f59e0b;display:inline-block}
+#healthDot.online{background:#22c55e}
+#healthDot.offline{background:#ef4444}
+.sage-head button{border:0;background:rgba(255,255,255,.18);color:#fff;width:22px;height:22px;border-radius:7px;cursor:pointer;font-size:16px}
+.chat-screen{height:calc(100% - 62px);display:flex;flex-direction:column;background:#f5f9fc}
+.chat-body{flex:1;overflow-y:auto;padding:10px 9px 6px;background:#f5f9fc}
+.msg{display:flex;gap:7px;margin-bottom:10px}
+.msg.user{justify-content:flex-end}
+.avatar-mini{width:22px;height:22px;border-radius:50%;background:#cfe6f5;color:#00518a;display:grid;place-items:center;flex:0 0 22px;font-size:12px}
+.bubble{max-width:86%;font-size:11px;line-height:1.48;padding:10px;border-radius:12px;background:#fff;border:1px solid #cfe0ee;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.msg.ai .bubble{border-top-left-radius:4px}
+.msg.user .bubble{background:#00518a;color:#fff;border-color:#00518a;border-top-right-radius:4px}
+.quick-row{display:flex;gap:5px;overflow-x:auto;padding:6px 8px;background:#f5f9fc}
+.quick-row button{white-space:nowrap;border:1px solid #b9d8ee;background:#eaf4fb;color:#00518a;border-radius:999px;padding:6px 8px;font-size:10px;font-weight:700;cursor:pointer}
+.quick-row button:hover{background:#d8ecf9}
+.typing{font-size:10px;color:#777;padding:6px 10px}
+.typing span{display:inline-block;width:5px;height:5px;border-radius:50%;background:#00518a;margin-left:2px;animation:b 1s infinite}
+.typing span:nth-child(2){animation-delay:.15s}
+.typing span:nth-child(3){animation-delay:.3s}
+@keyframes b{50%{transform:translateY(-3px);opacity:.45}}
+.composer{height:42px;margin:0 8px;border:1px solid #9cc4e0;border-radius:9px;display:flex;align-items:center;padding:4px;background:#fff}
+.composer input{flex:1;border:0;outline:0;font-size:11px;padding:0 8px}
+.composer button{width:32px;height:32px;border:0;border-radius:8px;background:#00518a;color:#fff;cursor:pointer}
+.powered{font-size:8px;text-align:center;color:#777;margin:5px 0 6px}
+.copy-btn{display:block;margin-top:6px;border:1px solid #b9d8ee;background:#eaf4fb;border-radius:7px;color:#00518a;font-size:10px;padding:4px 7px;cursor:pointer}
+.toast-host{position:fixed;top:16px;right:16px;z-index:99}
+.toast{background:#1f2937;color:#fff;border-radius:9px;padding:9px 12px;margin-bottom:8px;font-size:12px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+@media(max-width:860px){.official-nav nav{display:none}.photo-hero{height:240px}.hero-title{left:24px;font-size:21px;max-width:90%}.sage-widget{right:12px;bottom:88px}.sage-launcher{right:16px}}
