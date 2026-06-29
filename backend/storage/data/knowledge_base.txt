@@ -1,7 +1,11 @@
 DST Centre for Interdisciplinary Mathematical Sciences (DST-CIMS), Banaras Hindu University (BHU), Varanasi - 221005, Uttar Pradesh, India.
 
 [SECTION: ABOUT DST-CIMS]
-The DST Centre for Interdisciplinary Mathematical Sciences (DST-CIMS) is a research and training centre at Banaras Hindu University (BHU), Varanasi. It was established with funding from the Department of Science and Technology (DST), Government of India, vide letter number SR/S4/MS:428/07 dated 20 November 2007. The centre was created to improve the overall quality of research and education in the Mathematical Sciences in Uttar Pradesh and adjoining areas, by bringing the needed expertise and facilities to one convenient location. Its primary mission is to impart training and research in Mathematical Sciences and to establish core-group research facilities in the region. The centre is well known for its teaching, research, and academic activities such as workshops, training programmes, and conferences.
+The DST Centre for Interdisciplinary Mathematical Sciences (DST-CIMS) is a research and training centre at Banaras Hindu University (BHU), Varanasi, under the Institute of Science. It was established with funding from the Department of Science and Technology (DST), Government of India, vide letter number SR/S4/MS:428/07 dated 20 November 2007. The centre was created to improve the overall quality of research and education in the Mathematical Sciences in Uttar Pradesh and adjoining areas, by bringing the needed expertise and facilities to one convenient location. Its primary mission is to impart training and research in Mathematical Sciences and to establish core-group research facilities in the region. The centre is well known for its teaching, research, and academic activities such as workshops, training programmes, and conferences.
+
+[SECTION: LEADERSHIP - DIRECTOR / COORDINATOR]
+DST-CIMS does not have a separate "Director". The head of the centre is called the COORDINATOR. (The post of "Director" exists for the Institute of Science as a whole, not for DST-CIMS individually.) So if someone asks "Who is the Director of DST-CIMS?", the correct answer is that the centre is headed by a Coordinator.
+Current Coordinator: Prof. Manjari Gupta, Professor, Department of Computer Science, BHU (Email: manjari@bhu.ac.in, Phone: 9450419974). Prof. Raghavendra Chaubey, Professor of Applied Mathematics, is also associated with the Coordinator role at the centre. For the most up-to-date office-bearer, refer to the official DST-CIMS page on the BHU website.
 
 [SECTION: COLLABORATING DEPARTMENTS]
 DST-CIMS was formed with the active cooperation of the Departments of Mathematics, Statistics, Computer Science, and Applied Mathematics of BHU. Scientists from other departments, such as the Department of Physics, have also actively contributed to and participated in its activities. This interdisciplinary structure is the core strength of the centre, allowing people with diverse research interests to interact and collaborate.
@@ -13,30 +17,31 @@ DST-CIMS offers postgraduate and doctoral programmes in the mathematical and com
 The centre is also involved in Ph.D. (doctoral) research programmes across Mathematics, Statistics, Computer Science, and Applied Mathematics. For the exact current list of programmes, intake, and syllabi, please refer to the official DST-CIMS page on the BHU website or contact the centre directly.
 
 [SECTION: ADMISSIONS AND ELIGIBILITY]
-Admission to the M.Sc. programmes at BHU is generally done through the national-level entrance examination (CUET-PG) conducted for postgraduate admissions. Ph.D. admissions follow the BHU research admission process (such as RET / national fellowships as applicable). Eligibility typically requires a relevant bachelor's or master's degree with the required percentage as specified by BHU. Because eligibility criteria, cut-offs, and the admission calendar change every year, candidates should always verify the latest details from the official BHU admission portal or the DST-CIMS office before applying.
+Admission to the M.Sc. programmes at BHU is generally done through the national-level entrance examination (CUET-PG) conducted for postgraduate admissions. Ph.D. admissions follow the BHU research admission process (such as RET / national fellowships as applicable). Eligibility typically requires a relevant bachelor's or master's degree with the required percentage as specified by BHU. Because eligibility criteria, cut-offs, and the admission calendar change every year, candidates should always verify the latest details from the official BHU admission portal (admission.bhu.ac.in) or the DST-CIMS office before applying.
 
 [SECTION: FACULTY]
 Faculty members associated with DST-CIMS include:
+- Prof. Manjari Gupta, Professor (Computer Science) and current Coordinator of DST-CIMS. Research interests: Applications of Artificial Intelligence in Software Engineering, Machine Learning, Data Mining. Email: manjari@bhu.ac.in. Phone: 9450419974.
 - Dr. Bankteshwar Tiwari, Professor (Mathematics). Research interests: Differential Geometry, Riemann-Finsler Geometry and Applications. Email: btiwari@bhu.ac.in, banktesht@gmail.com. Phone: 0542-2369337.
-- Dr. Raghavendra Chaubey, Professor / Associate Professor (Applied Mathematics). Research interests: General Theory of Relativity, Cosmology, Dynamical Systems, Linear Stability Theory, Bifurcation Theory, Observational Cosmology, Finslerian Cosmology. Email: rchaubey@bhu.ac.in.
-- Dr. Manjari Gupta, Associate Professor (Computer Science). Research interests: Applications of Artificial Intelligence in Software Engineering.
+- Dr. Raghavendra Chaubey, Professor (Applied Mathematics), associated with the Coordinator role. Research interests: General Theory of Relativity, Cosmology, Dynamical Systems, Dark Energy, Modified Gravity, Bouncing and Cyclic Universe, Bayesian and Observational Cosmology, Machine Learning in Cosmology, Finslerian Cosmology. Email: rchaubey@bhu.ac.in.
 - Ms. Jyoti Singh Kirar, Assistant Professor.
 - Dr. Ganga Ram, Assistant Professor.
 
 [SECTION: RESEARCH AREAS]
-Research at DST-CIMS spans several areas of the mathematical sciences, including: Differential Geometry and Riemann-Finsler Geometry; General Relativity, Cosmology and Dynamical Systems; Statistics and Computing; Signal and Image Processing; and Applications of Artificial Intelligence in Software Engineering. The centre supports interdisciplinary research drawing on Mathematics, Statistics, Computer Science, Applied Mathematics, and Physics.
+Research at DST-CIMS spans several areas of the mathematical sciences, including: Differential Geometry and Riemann-Finsler Geometry; General Relativity, Cosmology and Dynamical Systems; Statistics and Computing; Signal and Image Processing; Machine Learning; and Applications of Artificial Intelligence in Software Engineering. The centre supports interdisciplinary research drawing on Mathematics, Statistics, Computer Science, Applied Mathematics, and Physics.
 
 [SECTION: ACADEMIC ACTIVITIES]
-DST-CIMS regularly organises academic activities such as workshops, short-term training programmes, conferences, and seminars in the mathematical sciences. These activities are aimed at students, young researchers, and teachers to help them sustain and develop their research interests.
+DST-CIMS regularly organises academic activities such as workshops, short-term training programmes, conferences, and seminars in the mathematical sciences. These activities are aimed at students, young researchers, and teachers to help them sustain and develop their research interests. The Department of Statistics & DST-CIMS also conducts campus placements for its M.Sc. batches.
 
 [SECTION: SCHOLARSHIPS AND FELLOWSHIPS]
 Research scholars at DST-CIMS may be supported through standard fellowships available at BHU and national funding agencies (such as UGC/CSIR JRF/SRF and DST-supported project fellowships), subject to eligibility and availability. For exact scholarship and fellowship details, students should contact the DST-CIMS office or check the official BHU notifications.
 
 [SECTION: CONTACT]
 DST Centre for Interdisciplinary Mathematical Sciences (DST-CIMS),
-Banaras Hindu University (BHU), Varanasi - 221005, Uttar Pradesh, India.
+Institute of Science, Banaras Hindu University (BHU), Varanasi - 221005, Uttar Pradesh, India.
+Current Coordinator: Prof. Manjari Gupta (manjari@bhu.ac.in, 9450419974).
 Official page: https://www.bhu.ac.in/site/UnitHomeTemplate/1_233_3536_DST-Centre-for-Interdisciplinary-Mathematical-Sciences-Home
 For specific queries about admissions, courses, or research, please contact the centre office or the relevant faculty member listed on the official BHU faculty page.
 
-[SECTION: HISTORY AND COORDINATORS]
-The functioning of DST-CIMS was initiated by a founding team including Prof. Umesh Singh (Coordinator 2007-2017, Dept. of Statistics), Prof. A. K. Srivastava (Founder Additional Coordinator, Dept. of Mathematics), Prof. R. C. Yadava (P.I., Dept. of Statistics), Prof. K. N. Rai (P.I., Dept. of Applied Mathematics, IIT-BHU), Prof. S. K. Upadhyay (P.I. and Coordinator from 17 May 2017 to 25 May 2020, Dept. of Statistics), Prof. Harish Chandra (P.I., Dept. of Mathematics), and Prof. P. K. Mishra (P.I., Dept. of Computer Science).
+[SECTION: HISTORY AND PAST COORDINATORS]
+The functioning of DST-CIMS was initiated by a founding team including Prof. Umesh Singh (Coordinator 2007-2017, Dept. of Statistics), Prof. A. K. Srivastava (Founder Additional Coordinator, Dept. of Mathematics), Prof. R. C. Yadava (P.I., Dept. of Statistics), Prof. K. N. Rai (P.I., Dept. of Applied Mathematics, IIT-BHU), Prof. S. K. Upadhyay (P.I. and Coordinator from 17 May 2017 to 25 May 2020, Dept. of Statistics), Prof. Harish Chandra (P.I., Dept. of Mathematics), and Prof. P. K. Mishra (P.I., Dept. of Computer Science). These are PAST office-bearers and founders; the current Coordinator is Prof. Manjari Gupta.
