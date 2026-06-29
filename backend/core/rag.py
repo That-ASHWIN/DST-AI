@@ -20,15 +20,65 @@ LANGUAGE_INSTRUCTIONS = {
     "hinglish": "Respond in natural Hinglish using Roman script.",
 }
 
-# Appended to the end of EVERY generated answer (Mandatory Contact Footer).
-# Two trailing spaces before each newline = Markdown hard line break, so the
-# footer renders on separate lines inside the chat widget.
+# ---------------------------------------------------------------------------
+# Official DST-CIMS / BHU links (only verified, real URLs are used here so the
+# demo never shows a broken link).
+# ---------------------------------------------------------------------------
+HOME_URL = "https://www.bhu.ac.in/site/UnitHomeTemplate/1_233_3536_DST-Centre-for-Interdisciplinary-Mathematical-Sciences-Home"
+FACULTY_URL = "https://www.bhu.ac.in/site/FacultyList/1_233_3538_DST-Centre-for-Interdisciplinary-Mathematical-Sciences-Faculty"
+ADMISSION_URL = "https://admission.bhu.ac.in"
+RESEARCH_URL = "https://bhu.irins.org/faculty/index/DST+Centre+for+Interdisciplinary+Mathematical+Sciences"
+
+# topic key -> (label, url, [trigger keywords]). Order = display order.
+RELATED_LINKS = {
+    "faculty": ("DST-CIMS Faculty page", FACULTY_URL,
+                ["faculty", "professor", "teacher", "teachers", "staff",
+                 "coordinator", "teaching", "mentor"]),
+    "courses": ("DST-CIMS Programmes & courses", HOME_URL,
+                ["course", "courses", "programme", "program", "m.sc", "msc",
+                 "syllabus", "subject", "subjects", "study", "degree", "phd",
+                 "ph.d"]),
+    "admission": ("BHU Admission portal", ADMISSION_URL,
+                  ["admission", "admissions", "eligibility", "apply", "entrance",
+                   "cuet", "intake", "application", "qualify", "seat", "seats"]),
+    "research": ("DST-CIMS Research & publications", RESEARCH_URL,
+                 ["research", "publication", "publications", "paper", "papers",
+                  "areas", "area", "journal", "project", "projects"]),
+    "fees": ("BHU fees & scholarships", ADMISSION_URL,
+             ["fee", "fees", "scholarship", "scholarships", "fellowship",
+              "stipend", "cost", "funding"]),
+    "contact": ("DST-CIMS contact / department home", HOME_URL,
+                ["contact", "email", "phone", "address", "reach", "location",
+                 "where"]),
+}
+
+# Mandatory Contact Footer (two trailing spaces = Markdown hard line break).
 CONTACT_FOOTER = (
     "\n\nFor further information, please contact:  \n"
     "Coordinator: Prof. Bankteshwar Tiwari  \n"
     "Email: dstcims@gmail.com  \n"
     "Phone: 0542-2369337"
 )
+
+
+def build_related_links(query: str) -> str:
+    """Return a Markdown 'Related links' block based on what the user asked."""
+    q = (query or "").lower()
+    out = []
+    seen = set()
+    for _key, (label, url, keywords) in RELATED_LINKS.items():
+        if any(k in q for k in keywords) and url not in seen:
+            seen.add(url)
+            out.append((label, url))
+    if not out:
+        out = [("DST-CIMS official website", HOME_URL)]
+    lines = "\n".join(f"- [{label}]({url})" for label, url in out)
+    return f"\n\n\U0001F517 **Related links:**\n{lines}"
+
+
+def build_trailer(query: str) -> str:
+    """Related links + mandatory contact footer, appended to every answer."""
+    return build_related_links(query) + CONTACT_FOOTER
 
 
 def build_prompt(query: str, context: str, department: str, lang: str) -> str:
@@ -56,7 +106,7 @@ def generate_rag_response(query: str, department: str | None = None) -> str:
 
     try:
         answer = generate_response(build_prompt(query, context, dept, lang)).strip()
-        return answer + CONTACT_FOOTER
+        return answer + build_trailer(query)
     except Exception as e:
         logger.error("LLM failed: %s", e)
         return f"{LLM_ERROR_FALLBACK[lang]} (Reason: {e})"
@@ -79,7 +129,7 @@ def stream_rag_response(query: str, department: str | None = None):
         if not any_token:
             yield LLM_ERROR_FALLBACK[lang]
             return
-        yield CONTACT_FOOTER
+        yield build_trailer(query)
     except Exception as e:
         logger.error("Streaming LLM failed: %s", e)
         yield f"{LLM_ERROR_FALLBACK[lang]} (Reason: {e})"
