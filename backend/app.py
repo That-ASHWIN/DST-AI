@@ -25,6 +25,7 @@ from backend.routes.upload_routes import router as upload_router
 from backend.routes.url_routes import router as url_router
 from backend.routes.admin_routes import router as admin_router
 from backend.routes.reindex_routes import router as reindex_router
+from backend.routes.admin_panel_routes import router as admin_panel_router
 
 # --------------------------------------------------------
 # Logging
@@ -85,6 +86,7 @@ app.include_router(upload_router)
 app.include_router(url_router)
 app.include_router(admin_router)
 app.include_router(reindex_router)
+app.include_router(admin_panel_router)
 
 # Optional routers
 

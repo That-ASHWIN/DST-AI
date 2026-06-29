@@ -1,9 +1,10 @@
 import logging, uuid
 from pathlib import Path
-from fastapi import APIRouter, File, Form, HTTPException, UploadFile
+from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile
 from backend.config import ALLOWED_FILE_TYPES, MAX_UPLOAD_SIZE, UPLOAD_DIR
 from backend.ingestion.pdf_loader import ingest_pdf
-logger=logging.getLogger(__name__); router=APIRouter(prefix="/admin/upload",tags=["Admin Ingestion"])
+from backend.routes.deps import require_admin
+logger=logging.getLogger(__name__); router=APIRouter(prefix="/admin/upload",tags=["Admin Ingestion"],dependencies=[Depends(require_admin)])
 @router.post("/pdf")
 async def upload_pdf(file:UploadFile=File(...), department:str=Form("general")):
     if not file.filename: raise HTTPException(400,"No filename provided")

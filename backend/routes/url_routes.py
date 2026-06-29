@@ -1,8 +1,9 @@
 import logging
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, HttpUrl
 from backend.ingestion.url_loader import ingest_url
-logger=logging.getLogger(__name__); router=APIRouter(prefix="/admin/upload",tags=["Admin Ingestion"])
+from backend.routes.deps import require_admin
+logger=logging.getLogger(__name__); router=APIRouter(prefix="/admin/upload",tags=["Admin Ingestion"],dependencies=[Depends(require_admin)])
 class URLRequest(BaseModel): url:HttpUrl; department:str="general"
 @router.post("/url")
 async def upload_url(request:URLRequest):

@@ -33,6 +33,15 @@ LLM_MODEL = os.getenv("LLM_MODEL", "llama-3.1-8b-instant")
 USE_HOSTED_LLM = bool(LLM_API_KEY)
 
 # ==========================
+# ADMIN PANEL ACCESS
+# ==========================
+# Protects the staff Admin Panel (/admin/panel) and the ingestion endpoints
+# (/admin/upload/...). If set, staff must provide this key (sent as the
+# X-Admin-Key header) to upload PDFs/URLs on a public deployment. If left
+# empty, uploads are open - convenient for local development.
+ADMIN_KEY = os.getenv("ADMIN_KEY", "").strip()
+
+# ==========================
 # EMBEDDING MODEL
 # ==========================
 EMBEDDING_MODEL = "all-MiniLM-L6-v2"
