@@ -11,7 +11,7 @@ from fastapi import APIRouter, Response, status
 from backend.storage.vector_db import get_document_count
 
 router = APIRouter(
-    prefix="/health-detailed",
+    prefix="/health",
     tags=["Health"],
 )
 
@@ -33,7 +33,10 @@ def health():
 @router.get("/live")
 def live():
     return {
-        "alive": True
+        "status": "ok",
+        "alive": True,
+        "service": "CIMS SAGE",
+        "timestamp": datetime.now(timezone.utc).isoformat(),
     }
 
 
@@ -48,6 +51,7 @@ def ready(response: Response):
         chunks = get_document_count()
         return {
             "ready": True,
+            "status": "ready",
             "database": "connected",
             "knowledge_base_chunks": chunks,
         }
@@ -56,6 +60,7 @@ def ready(response: Response):
         response.status_code = status.HTTP_503_SERVICE_UNAVAILABLE
         return {
             "ready": False,
+            "status": "not_ready",
             "database": "disconnected",
         }
 

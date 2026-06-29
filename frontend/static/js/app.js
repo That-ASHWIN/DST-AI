@@ -2,7 +2,7 @@
  * CIMS SAGE · app.js
  * AI RAG Assistant frontend · Vanilla ES6
  * Backend: FastAPI (POST /chat, /upload/pdf, /upload/url,
- *          GET /admin/info, /admin/files, /admin/stats, /health)
+ *          GET /admin/info, /admin/files, /admin/stats, /health/live)
  * ============================================================ */
 "use strict";
 
@@ -23,7 +23,7 @@ const CONFIG = {
     adminInfo: "/admin/info",
     adminFiles: "/admin/files",
     adminStats: "/admin/stats",
-    health: "/health",
+    health: "/health/live",
   },
   HEALTH_INTERVAL: 30000,
   TYPING_SPEED: 9, // ms per char
@@ -204,7 +204,7 @@ const Api = {
     return data;
   },
 
-  // POST /chat  -> flexible request/response shapes for FastAPI RAG backends
+  // POST /chat
   async chat(message, history, signal) {
     const payload = {
       query: message,
@@ -659,7 +659,7 @@ function bindPdfModal() {
       dom.pdfForm.reset();
       dom.pdfFileName.textContent = "No file selected";
       closeModal(dom.pdfModal);
-      refreshStatus();
+      await refreshStatus();
     } catch (err) {
       Toast.error(err.message || "Upload failed");
     } finally {
@@ -680,7 +680,7 @@ function bindUrlModal() {
       Toast.success(extractMsg(res, "URL content indexed successfully"));
       dom.urlForm.reset();
       closeModal(dom.urlModal);
-      refreshStatus();
+      await refreshStatus();
     } catch (err) {
       Toast.error(err.message || "URL upload failed");
     } finally {
@@ -747,8 +747,8 @@ async function loadKbData() {
   const info = infoRes.status === "fulfilled" ? infoRes.value : {};
   const merged = { ...(info || {}), ...(stats || {}) };
 
-  dom.kbStatDocs.textContent = pick(merged, ["documents", "num_documents", "doc_count", "files", "total_documents"], "—");
-  dom.kbStatChunks.textContent = pick(merged, ["chunks", "num_chunks", "chunk_count", "vectors", "total_chunks", "embeddings"], "—");
+  dom.kbStatDocs.textContent = pick(merged, ["documents", "num_documents", "doc_count", "files", "total_documents", "pdf_count"], "—");
+  dom.kbStatChunks.textContent = pick(merged, ["chunks", "num_chunks", "chunk_count", "vectors", "total_chunks", "embeddings", "knowledge_base_chunks"], "—");
   dom.kbStatModel.textContent = pick(merged, ["model", "llm", "model_name", "ollama_model", "embedding_model"], "—");
   dom.kbStatStatus.textContent = pick(merged, ["status", "state", "health"], "Active");
 
@@ -768,7 +768,7 @@ function renderKbFiles(filesData, err) {
 
   list.innerHTML = "";
   files.forEach((f) => {
-    const name = typeof f === "string" ? f : (f.name || f.filename || f.file || f.title || f.source || f.id || "Document");
+    const name = typeof f === "string" ? f : (f.name || f.filename || f.file || f.title || f.source || f.url || f.id || "Document");
     const meta = typeof f === "object" ? (f.size || f.type || f.chunks || f.pages || f.date || f.created_at || "") : "";
     const isUrlFile = isUrl(name);
     const el = document.createElement("div");
@@ -805,9 +805,9 @@ async function refreshStatus() {
   setConnection("connecting", "Connecting…");
   try {
     const health = await Api.health();
-    const ok = !health || health.status === undefined ||
+    const ok = !health || health.alive === true || health.status === undefined ||
       ["ok", "healthy", "up", "running", true, "online"].includes(health.status);
-    setConnection(ok ? "online" : "offline", ok ? "Connected" : "Degraded");
+    setConnection(ok ? "online" : "offline", ok ? "Online" : "Degraded");
   } catch {
     setConnection("offline", "Offline");
   }
@@ -818,11 +818,12 @@ async function refreshStatus() {
     const i = info.status === "fulfilled" ? info.value : {};
     const s = stats.status === "fulfilled" ? stats.value : {};
     const merged = { ...(i || {}), ...(s || {}) };
-    const model = pick(merged, ["model", "llm", "model_name", "ollama_model"], null);
+    const model = pick(merged, ["model", "llm", "model_name", "ollama_model", "embedding_model"], null);
     if (model) dom.modelName.textContent = String(model);
-    const docs = pick(merged, ["documents", "num_documents", "doc_count", "files", "total_documents"], null);
-    const chunks = pick(merged, ["chunks", "num_chunks", "vectors", "total_chunks"], null);
+    const docs = pick(merged, ["documents", "num_documents", "doc_count", "files", "total_documents", "pdf_count"], null);
+    const chunks = pick(merged, ["chunks", "num_chunks", "vectors", "total_chunks", "knowledge_base_chunks"], null);
     if (docs !== null) dom.kbStatus.textContent = `KB: ${docs} docs${chunks !== null ? " · " + chunks + " chunks" : ""}`;
+    else if (chunks !== null) dom.kbStatus.textContent = `KB: ${chunks} chunks`;
     else dom.kbStatus.textContent = "KB: ready";
   } catch { /* keep defaults */ }
 }
