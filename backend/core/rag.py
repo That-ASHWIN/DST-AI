@@ -20,6 +20,21 @@ LANGUAGE_INSTRUCTIONS = {
     "hinglish": "Respond in natural Hinglish using Roman script.",
 }
 
+# Out-of-scope refusal. Must match the exact sentence in prompts.py (Rule A).
+# When the bot produces this, we return ONLY this clean message - no related
+# links and no contact footer.
+OUT_OF_SCOPE_MESSAGE = (
+    "I'm sorry, but I can't help with that. As CIMS SAGE 2, I'm an academic "
+    "assistant and can only answer questions related to the studies and topics "
+    "of DST-CIMS, BHU."
+)
+_SCOPE_SIGNATURE = "only answer questions related to the studies and topics"
+
+
+def is_refusal(text: str) -> bool:
+    return _SCOPE_SIGNATURE in (text or "").lower()
+
+
 # ---------------------------------------------------------------------------
 # Official DST-CIMS / BHU links (only verified, real URLs are used here so the
 # demo never shows a broken link).
@@ -55,7 +70,7 @@ RELATED_LINKS = {
 # Mandatory Contact Footer (two trailing spaces = Markdown hard line break).
 CONTACT_FOOTER = (
     "\n\nFor further information, please contact:  \n"
-    "Coordinator: Prof. Raghavendra Chaubey  \n"
+    "Coordinator: Prof. Bankteshwar Tiwari  \n"
     "Email: dstcims@gmail.com  \n"
     "Phone: 0542-2369337"
 )
@@ -77,7 +92,7 @@ def build_related_links(query: str) -> str:
 
 
 def build_trailer(query: str) -> str:
-    """Related links + mandatory contact footer, appended to every answer."""
+    """Related links + mandatory contact footer, appended to in-scope answers."""
     return build_related_links(query) + CONTACT_FOOTER
 
 
@@ -106,6 +121,8 @@ def generate_rag_response(query: str, department: str | None = None) -> str:
 
     try:
         answer = generate_response(build_prompt(query, context, dept, lang)).strip()
+        if is_refusal(answer):
+            return OUT_OF_SCOPE_MESSAGE
         return answer + build_trailer(query)
     except Exception as e:
         logger.error("LLM failed: %s", e)
@@ -123,11 +140,15 @@ def stream_rag_response(query: str, department: str | None = None):
 
     try:
         any_token = False
+        full = ""
         for token in stream_response(build_prompt(query, context, dept, lang)):
             any_token = True
+            full += token
             yield token
         if not any_token:
             yield LLM_ERROR_FALLBACK[lang]
+            return
+        if is_refusal(full):
             return
         yield build_trailer(query)
     except Exception as e:
