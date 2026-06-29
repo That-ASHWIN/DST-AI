@@ -15,12 +15,13 @@ TAGS_API = f"{OLLAMA_BASE_URL}/api/tags"
 MAX_RETRIES = 2
 RETRY_DELAY_SECONDS = 1.5
 
+# Lower context + output keeps memory/CPU usage modest so laptops don't hang.
 OPTIONS = {
     "temperature": 0.1,
     "top_p": 0.8,
     "top_k": 20,
-    "num_predict": 360,
-    "num_ctx": 4096,
+    "num_predict": 300,
+    "num_ctx": 2048,
     "repeat_penalty": 1.05,
 }
 
@@ -43,7 +44,7 @@ def resolve_model():
 
     Prefer the configured OLLAMA_MODEL. If it isn't installed, fall back to a
     model with the same base name, otherwise the first installed model. This
-    keeps the app working even when the exact tag (e.g. llama3.1:8b) is missing.
+    keeps the app working even when the exact tag is missing.
     """
     global _resolved_model
     if _resolved_model:
@@ -51,7 +52,6 @@ def resolve_model():
 
     models = list_models()
     if not models:
-        # Ollama unreachable / no models. Return configured name; caller errors clearly.
         return OLLAMA_MODEL
 
     if OLLAMA_MODEL in models:
@@ -84,7 +84,7 @@ def check_ollama():
         "model_in_use": resolve_model() if reachable else None,
         "hint": (
             "OK" if (reachable and configured_present)
-            else "Run 'ollama serve' and pull a model, e.g. 'ollama pull llama3.1:8b'"
+            else "Run 'ollama serve' and pull a light model, e.g. 'ollama pull llama3.2:3b'"
         ),
     }
 

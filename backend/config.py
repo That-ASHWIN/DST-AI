@@ -13,8 +13,11 @@ LOG_DIR = BASE_DIR / "logs"
 # ==========================
 # OLLAMA SETTINGS
 # ==========================
+# NOTE: llama3.1:8b is heavy (~6GB RAM) and can freeze laptops/Macs.
+# Default to a lightweight model so the app stays responsive.
+# Override anytime: OLLAMA_MODEL=llama3.1:8b python -m uvicorn backend.app:app
 OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
-OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.1:8b")
+OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "llama3.2:3b")
 
 # ==========================
 # EMBEDDING MODEL
