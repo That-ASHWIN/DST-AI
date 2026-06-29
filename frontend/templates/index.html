@@ -3,66 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CIMS SAGE 2 · Department AI Assistant</title>
-  <link rel="stylesheet" href="/static/css/style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+  <title>CIMS SAGE 2 · SuperBot Style Assistant</title>
+  <link rel="stylesheet" href="/static/css/style.css?v=superbot2" />
 </head>
 <body>
-  <main class="site-preview">
-    <section>
-      <p class="eyebrow">DST-CIMS · BHU</p>
-      <h1>Department-Level AI Assistant</h1>
-      <p>CIMS SAGE 2 is ready. Use the floating chat button at bottom-right.</p>
+  <header class="cu-navbar">
+    <div class="cu-logo"><span>CU</span><div>CHANDIGARH<br>UNIVERSITY</div></div>
+    <nav>
+      <a>ABOUT</a><a>PROGRAMS</a><a>ACADEMICS</a><a>ADMISSIONS</a><a>CAMPUS LIFE</a><a>PLACEMENTS</a><a>RESEARCH & INNOVATION</a>
+    </nav>
+    <button class="helpline">☎ 180012128800</button>
+  </header>
+
+  <main class="hero">
+    <section class="hero-copy">
+      <h1>Best Private <b>University</b><br>in Punjab (India)</h1>
+      <p>Department-level AI assistant for admissions, courses, fees, faculty, research and scholarships.</p>
+      <button class="apply-btn">APPLY TODAY →</button>
+    </section>
+    <section class="apply-card">
+      <h3>APPLY TODAY FOR<br><b>CHANDIGARH UNIVERSITY, INDIA</b></h3>
+      <input placeholder="STUDENT NAME" />
+      <input placeholder="+91  STUDENT MOBILE" />
+      <input placeholder="SELECT DISCIPLINE" />
+      <button>REGISTER NOW</button>
     </section>
   </main>
 
-  <button id="sageLauncher" class="sage-launcher" aria-label="Open CIMS SAGE 2">
-    <span>💬</span>
-  </button>
+  <button id="sageLauncher" class="chat-orb" aria-label="Open CIMS SAGE 2">💬</button>
 
-  <section id="sageWidget" class="sage-widget hidden" aria-label="CIMS SAGE 2 chat widget">
-    <header class="sage-header">
-      <div class="sage-brand">
-        <div class="sage-logo">🎓</div>
-        <div>
-          <h2>CIMS SAGE 2</h2>
-          <p><span id="healthDot" class="dot"></span><span id="healthText">Checking…</span> · Department AI</p>
-        </div>
+  <section id="sageWidget" class="superbot-widget" aria-label="CIMS SAGE 2">
+    <header class="bot-top">
+      <div class="bot-avatar">🎓</div>
+      <div class="bot-title">
+        <strong>CIMS SAGE 2</strong>
+        <span><i id="healthDot" class="online-dot"></i><span id="healthText">Connected</span></span>
       </div>
-      <button id="sageClose" class="icon-btn" aria-label="Close">×</button>
+      <button id="minBtn" title="Minimize">−</button>
+      <button id="closeBtn" title="Close">×</button>
     </header>
 
-    <div class="quick-actions">
-      <button data-dept="computer-science">💻 Computer Science</button>
-      <button data-dept="mathematics">∑ Mathematics</button>
-      <button data-dept="mba">📊 MBA</button>
-      <button data-dept="general">🏛 General</button>
+    <div id="modeScreen" class="mode-screen">
+      <div class="welcome-card">
+        <h2>How would you like to chat?</h2>
+        <p>Choose your preferred way to connect with us</p>
+        <button class="mode-option" data-mode="voice"><span class="mode-icon">🎙️</span><b>Voice</b><small>Talk naturally with AI</small><em>›</em></button>
+        <button class="mode-option" data-mode="text"><span class="mode-icon">💬</span><b>Text</b><small>Type your messages</small><em>›</em></button>
+      </div>
+      <div class="powered">powered by <b>CIMS SAGE</b></div>
     </div>
 
-    <div id="chatMessages" class="messages">
-      <article class="msg ai">
-        <div class="bubble markdown">
-          <strong>Namaste! Welcome to DST-CIMS, BHU.</strong><br><br>
-          Main <strong>CIMS SAGE 2</strong> hoon — department-level AI assistant. Aap courses, admissions, fees, faculty, eligibility, research aur scholarships ke baare me pooch sakte ho.
-        </div>
-      </article>
+    <div id="chatScreen" class="chat-screen hidden">
+      <div class="dept-tabs">
+        <button data-dept="auto" class="active">Auto</button>
+        <button data-dept="computer-science">CS</button>
+        <button data-dept="mathematics">Maths</button>
+        <button data-dept="mba">MBA</button>
+      </div>
+      <div id="chatMessages" class="chat-body">
+        <div class="msg ai"><div class="bubble"><b>🙏 Namaste! Welcome to DST-CIMS, BHU.</b><br><br>Main <b>CIMS SAGE 2</b> hoon — aap courses, admission, fees, eligibility, faculty aur research ke baare me pooch sakte ho.</div></div>
+      </div>
+      <form id="chatForm" class="chat-input">
+        <input id="messageInput" autocomplete="off" placeholder="Ask CIMS SAGE anything..." />
+        <button type="submit">➤</button>
+      </form>
+      <div class="powered small">Powered by Gemini AI · Official DST-CIMS Site</div>
     </div>
-
-    <form id="chatForm" class="composer">
-      <select id="departmentSelect" title="Department">
-        <option value="auto">Auto</option>
-        <option value="computer-science">Computer Science</option>
-        <option value="mathematics">Mathematics</option>
-        <option value="mba">MBA</option>
-        <option value="general">General</option>
-      </select>
-      <textarea id="messageInput" rows="1" placeholder="Ask CIMS SAGE anything…"></textarea>
-      <button id="sendBtn" type="submit" aria-label="Send">➤</button>
-    </form>
   </section>
 
   <div id="toastHost" class="toast-host"></div>
-  <script src="/static/js/app.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+  <script src="/static/js/app.js?v=superbot2" defer></script>
 </body>
 </html>
