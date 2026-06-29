@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none" role="img" aria-label="CIMS SAGE logo">
+  <defs>
+    <linearGradient id="sageBg" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="0.55" stop-color="#4f46e5"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="sageSpark" x1="36" y1="28" x2="92" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <filter id="sageShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#1e3a8a" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Rounded square base -->
+  <rect x="6" y="6" width="116" height="116" rx="30" fill="url(#sageBg)" filter="url(#sageShadow)"/>
+
+  <!-- Subtle inner glow ring -->
+  <rect x="6" y="6" width="116" height="116" rx="30" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="2"/>
+
+  <!-- Neural / knowledge nodes -->
+  <g stroke="#ffffff" stroke-opacity="0.45" stroke-width="2.5" stroke-linecap="round">
+    <line x1="40" y1="46" x2="64" y2="64"/>
+    <line x1="88" y1="46" x2="64" y2="64"/>
+    <line x1="40" y1="86" x2="64" y2="64"/>
+    <line x1="88" y1="86" x2="64" y2="64"/>
+  </g>
+  <g fill="#bfdbfe">
+    <circle cx="40" cy="46" r="6"/>
+    <circle cx="88" cy="46" r="6"/>
+    <circle cx="40" cy="86" r="6"/>
+    <circle cx="88" cy="86" r="6"/>
+  </g>
+
+  <!-- Central spark (AI core) -->
+  <path d="M64 36 L70 58 L92 64 L70 70 L64 92 L58 70 L36 64 L58 58 Z" fill="url(#sageSpark)"/>
+  <circle cx="64" cy="64" r="7" fill="#1d4ed8"/>
+  <circle cx="64" cy="64" r="3.2" fill="#ffffff"/>
+</svg>

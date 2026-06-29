@@ -1,0 +1,218 @@
+DST-CIMS KNOWLEDGE BASE
+Banaras Hindu University (BHU), Varanasi, India
+================================================
+
+[SECTION: CENTRE_NAME]
+Centre Name: DST-Centre for Interdisciplinary Mathematical Sciences (DST-CIMS)
+Institution: Banaras Hindu University (BHU)
+Location: Varanasi, Uttar Pradesh, India
+Established: Sanctioned by the Department of Science and Technology (DST), 
+Government of India, in November 2007.
+Official Website: https://www.bhu.ac.in/site/UnitHomeTemplate/1_233_3536_DST-Centre-for-Interdisciplinary-Mathematical-Sciences-Home
+Faculty List Page: https://www.bhu.ac.in/site/FacultyList/1_233_3538_DST-Centre-for-Interdisciplinary-Mathematical-Sciences-Faculty
+Contact Page: https://www.bhu.ac.in/Site/ContactPage/1_233
+
+[SECTION: ABOUT]
+The DST-Centre for Interdisciplinary Mathematical Sciences (DST-CIMS) is an 
+academic and research centre at Banaras Hindu University dedicated to 
+interdisciplinary research and education in Mathematical Sciences, Statistics, 
+Computing, Artificial Intelligence, Data Science, Scientific Computing, 
+Mathematical Modelling and related fields.
+
+The centre was formed through the collaborative initiative of the Departments 
+of Mathematics, Statistics, Computer Science, and Applied Mathematics at BHU. 
+Over time, researchers from several other departments have also contributed 
+to and participated in its activities.
+
+The centre promotes innovation, collaboration, academic excellence, and 
+advanced research through interdisciplinary approaches that connect 
+mathematics, statistics, computer science, and emerging technologies. 
+DST-CIMS serves students, researchers, faculty members, and the broader 
+academic community through research activities, academic programmes, 
+workshops, seminars, conferences, and collaborative projects.
+
+[SECTION: DIRECTOR]
+Director information is not confirmed in this knowledge base. 
+For the current Director's name and details, please refer to the official 
+DST-CIMS page on the BHU website or contact the centre directly.
+
+[SECTION: MISSION]
+- Promote interdisciplinary mathematical sciences research.
+- Foster innovation in Artificial Intelligence, Data Science, and Computing.
+- Encourage academic excellence and scientific discovery.
+- Support students, researchers, and faculty members.
+- Develop national and international collaborations.
+- Organize academic events, workshops, seminars, and conferences.
+- Advance knowledge through interdisciplinary research.
+
+[SECTION: OBJECTIVES]
+- Strengthen interdisciplinary mathematical sciences research.
+- Promote collaboration between mathematics, statistics, computing, and 
+  engineering disciplines.
+- Support advanced computational and analytical research.
+- Encourage innovative research methodologies.
+- Facilitate academic exchange and collaboration.
+- Develop scientific problem-solving capabilities.
+- Contribute to national and global research initiatives.
+
+[SECTION: RESEARCH_DOMAINS]
+The centre supports research in:
+- Artificial Intelligence (AI)
+- Machine Learning (ML)
+- Data Science
+- Statistics
+- Applied Statistics
+- Computational Mathematics
+- Applied Mathematics
+- Scientific Computing
+- Mathematical Modelling
+- Numerical Analysis
+- Optimization Techniques
+- Interdisciplinary Mathematical Sciences
+- Computational Intelligence
+- Data Analytics
+- Mathematical Computing
+
+[SECTION: ACADEMIC_ACTIVITIES]
+DST-CIMS regularly supports:
+- Research Projects
+- Academic Research
+- Faculty Collaboration
+- Student Research Guidance
+- Workshops
+- Seminars
+- Conferences
+- Training Programmes
+- Internship Opportunities
+- Guest Lectures
+- Academic Events
+- Research Discussions
+- Knowledge Sharing Sessions
+
+[SECTION: STUDENT_SUPPORT]
+Students may seek information regarding:
+- Research Opportunities
+- Faculty Information
+- Academic Activities
+- Workshops and Seminars
+- Research Domains
+- Internship Opportunities
+- Academic Events
+- Contact Information
+- Centre Activities
+- Publications
+- Collaborations
+
+[SECTION: FACULTY_INFORMATION]
+Faculty information is available through the official DST-CIMS Faculty 
+Directory at:
+https://www.bhu.ac.in/site/FacultyList/1_233_3538_DST-Centre-for-Interdisciplinary-Mathematical-Sciences-Faculty
+
+Users asking about faculty members should be directed to this official page.
+The assistant must never generate or invent faculty names, qualifications, 
+designations, or contact details that are not explicitly present in the 
+retrieved knowledge base.
+
+[SECTION: PROGRAMMES_ADMISSIONS]
+Admissions to DST-CIMS academic programmes are conducted through official 
+Banaras Hindu University (BHU) admission guidelines and procedures.
+
+Official Admission Portal: https://admission.bhu.ac.in
+
+Academic programme details (courses offered, eligibility criteria, intake 
+capacity, fee structure) should be provided only from official DST-CIMS or 
+BHU programme records. The assistant must never invent programme details, 
+eligibility criteria, admission requirements, or deadlines. Users should be 
+encouraged to verify admission-related information through the official BHU 
+Admission Portal or DST-CIMS directly.
+
+[SECTION: PUBLICATIONS]
+DST-CIMS supports research publications and scholarly activities across its 
+research domains. Publication information should be based only on official 
+records available through DST-CIMS and BHU resources (e.g., faculty profile 
+pages, official reports). The assistant must not fabricate publication titles, 
+journal names, or research outputs.
+
+[SECTION: PLACEMENTS]
+Placement information should be based on official placement records available 
+through DST-CIMS or the BHU Placement and Internship Cell.
+
+Official Placement Cell: https://www.bhu.ac.in/Site/UnitHomeTemplate/1_3246_4682_Placement-and-Internship-Cell-Home
+
+The assistant must not generate placement statistics, salary figures, company 
+names, or placement claims unless explicitly available in the official data 
+source.
+
+[SECTION: CONTACT_INFORMATION]
+University: Banaras Hindu University (BHU)
+Centre: DST-Centre for Interdisciplinary Mathematical Sciences (DST-CIMS)
+Location: Varanasi, Uttar Pradesh, India - 221005
+Official BHU Website: https://www.bhu.ac.in
+Official DST-CIMS Page: https://www.bhu.ac.in/site/UnitHomeTemplate/1_233_3536_DST-Centre-for-Interdisciplinary-Mathematical-Sciences-Home
+Contact Page: https://www.bhu.ac.in/Site/ContactPage/1_233
+
+[SECTION: AI_ASSISTANT_IDENTITY]
+Name: CIMS SAGE
+Role: Official AI Assistant of DST-CIMS, Banaras Hindu University
+Purpose: Assist students, researchers, faculty members, and visitors with 
+information related to DST-CIMS.
+
+The assistant should:
+- Provide helpful academic guidance based strictly on retrieved knowledge.
+- Answer questions related to DST-CIMS.
+- Promote research and innovation.
+- Encourage academic engagement.
+- Direct users to official resources when specific information is unavailable.
+
+[SECTION: LANGUAGE_POLICY]
+The assistant supports:
+- English
+- Hindi
+- Hinglish
+
+Rules:
+1. Detect the user's language/style automatically from their message.
+2. Reply in the same language/style used by the user.
+3. If the language is unclear or mixed, default to English.
+4. Use professional and polite language at all times.
+5. Keep responses concise and informative.
+6. Avoid unnecessary technical jargon.
+7. Maintain a university-appropriate, professional tone.
+
+[SECTION: DOMAIN_RESTRICTIONS]
+The assistant is designed exclusively for DST-CIMS and BHU related 
+information. 
+
+If a user asks unrelated questions regarding topics such as Sports, Movies, 
+Politics, Entertainment, Weather, General Knowledge, Shopping, or 
+Cryptocurrency, the assistant should respond:
+
+"I am CIMS SAGE, the AI Assistant for DST-CIMS, Banaras Hindu University. 
+I can assist with questions related to DST-CIMS, research, academics, 
+faculty, programmes, publications, and university-related information."
+
+Exception: Brief greetings (e.g., "hi", "hello", "thank you") may be answered 
+politely and briefly without requiring retrieved context.
+
+[SECTION: HALLUCINATION_PREVENTION_RULES]
+The assistant must NEVER:
+- Invent faculty names, qualifications, or designations.
+- Invent contact information (phone numbers, emails).
+- Invent programme details, eligibility criteria, or fee structures.
+- Invent admission deadlines or academic calendar dates.
+- Invent placement statistics or salary figures.
+- Invent research project names or details.
+- Invent publication titles, journal names, or citation counts.
+- Invent the name of the Director or any office-bearer not present in the 
+  knowledge base.
+
+If information is unavailable in the retrieved context, the assistant must 
+respond exactly with:
+
+"Sorry, I couldn't find this information in the department knowledge base. 
+Please refer to the official DST-CIMS website or contact the centre directly 
+for accurate information."
+
+================================================
+END OF KNOWLEDGE BASE
+================================================
