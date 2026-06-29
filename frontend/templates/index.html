@@ -3,84 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DST-CIMS BHU · CIMS SAGE AI Assistant</title>
-  <link rel="stylesheet" href="/static/css/style.css?v=direct-chat" />
+  <title>DST Centre for Interdisciplinary Mathematical Sciences · BHU</title>
+  <link rel="stylesheet" href="/static/css/style.css?v=bhu-official-stream" />
 </head>
 <body>
-  <header class="bhu-topbar">
-    <div class="bhu-logo">
-      <div class="seal">ॐ</div>
-      <div>
-        <strong>Banaras Hindu University</strong>
-        <span>DST Centre for Interdisciplinary Mathematical Sciences</span>
-      </div>
+  <div class="blue-strip"></div>
+  <header class="official-nav">
+    <div class="bhu-brand">
+      <div class="hindi">काशी हिन्दू<br>विश्वविद्यालय</div>
+      <div class="round-seal">ॐ</div>
+      <div class="english">BANARAS HINDU<br><b>UNIVERSITY</b></div>
     </div>
     <nav>
-      <a>Home</a><a>About</a><a>Academics</a><a>Research</a><a>People</a><a>Contact</a>
+      <a>Home</a><a>Objectives</a><a>Faculty</a><a>Programme</a><a>Placement Details</a><a>People</a><a>Publications</a><a>Gallery</a><a>Contact Us</a>
     </nav>
   </header>
 
-  <main class="bhu-page">
-    <section class="bhu-hero">
-      <p class="sub">DST-CIMS · BHU, Varanasi</p>
-      <h1>DST Centre for Interdisciplinary<br>Mathematical Sciences</h1>
-      <p class="lead">Official department-style AI assistant for programmes, admissions, research, faculty, scholarships and centre information.</p>
+  <main class="dept-site">
+    <section class="photo-hero">
+      <div class="hero-title">DST Centre for Interdisciplinary Mathematical Sciences</div>
     </section>
-    <section class="notice-card">
-      <h3>Department Help Desk</h3>
-      <p>Use the floating AI assistant at bottom-right to ask department-specific questions.</p>
-      <ul>
-        <li>M.Sc. Courses</li>
-        <li>Admissions & Eligibility</li>
-        <li>Research Areas</li>
-        <li>Faculty & Scholarships</li>
-      </ul>
+    <section class="intro-panel">
+      <h2>Introduction</h2>
+      <p>
+        Welcome to the DST Centre for Interdisciplinary Mathematical Sciences, Banaras Hindu University. Use the AI assistant for department-specific questions about courses, admissions, eligibility, research areas, faculty and scholarships.
+      </p>
     </section>
   </main>
 
-  <button id="sageLauncher" class="sage-launcher" aria-label="Open DST-CIMS AI Assistant">
-    <span>💬</span>
-  </button>
+  <button id="sageLauncher" class="sage-launcher" aria-label="Open DST-CIMS AI Assistant">💬</button>
 
   <section id="sageWidget" class="sage-widget" aria-label="DST-CIMS AI Assistant">
     <header class="sage-head">
       <div class="bot-mark">🎓</div>
       <div class="bot-info">
-        <strong>DST-CIMS AI Assistant</strong>
-        <span><i id="healthDot"></i><span id="healthText">Connecting</span> · BHU</span>
+        <strong>CIMS Sage</strong>
+        <span>DST-Centre for Interdisciplinary Mathematical Sciences</span>
+        <small><i id="healthDot"></i><span id="healthText">Connecting</span> · BHU</small>
       </div>
       <button id="minBtn" type="button">−</button>
       <button id="closeBtn" type="button">×</button>
     </header>
 
-    <div id="chatScreen" class="chat-screen">
+    <div class="chat-screen">
       <div id="chatMessages" class="chat-body">
         <article class="msg ai">
+          <div class="avatar-mini">🎓</div>
           <div class="bubble">
             <b>🙏 Namaste! Welcome to DST-CIMS, BHU.</b><br><br>
-            Main <b>CIMS SAGE 2</b> hoon — aap DST Centre for Interdisciplinary Mathematical Sciences ke courses, admissions, eligibility, research, faculty aur scholarships ke baare me seedha question pooch sakte ho.
+            Main <b>CIMS Sage</b> hoon — aapka official AI assistant.<br><br>
+            Main in topics pe help kar sakta hoon:<br>
+            • M.Sc. Courses<br>
+            • Admissions & eligibility<br>
+            • Fees, faculty & research areas<br>
+            • PhD programmes & scholarships<br><br>
+            Aap kya jaanna chahte hain? 😊
           </div>
         </article>
       </div>
 
       <div class="quick-row">
-        <button data-prompt="What courses are offered by DST-CIMS BHU?">📚 Courses</button>
-        <button data-prompt="What is the admission eligibility for DST-CIMS?">✅ Eligibility</button>
+        <button data-prompt="Tell me about courses offered by DST-CIMS BHU.">📚 Courses</button>
+        <button data-prompt="What is the admission eligibility for DST-CIMS BHU?">✅ Eligibility</button>
         <button data-prompt="Tell me about research areas at DST-CIMS BHU.">🔬 Research</button>
-        <button data-prompt="How can I contact DST-CIMS BHU?">☎ Contact</button>
+        <button data-prompt="Tell me about faculty at DST-CIMS BHU.">👨‍🏫 Faculty</button>
+        <button data-prompt="Tell me about fees and scholarships at DST-CIMS BHU.">💰 Fees</button>
       </div>
 
       <form id="chatForm" class="composer">
-        <input id="messageInput" autocomplete="off" placeholder="Ask CIMS SAGE anything..." />
+        <input id="messageInput" autocomplete="off" placeholder="Ask CIMS Sage anything..." />
         <button type="submit">➤</button>
       </form>
-      <p class="powered small">Powered by CIMS SAGE 2 · Official DST-CIMS Assistant</p>
+      <p class="powered">Powered by CIMS Sage AI · Official DST-CIMS Site</p>
     </div>
   </section>
 
   <div id="toastHost" class="toast-host"></div>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
-  <script src="/static/js/app.js?v=direct-chat" defer></script>
+  <script src="/static/js/app.js?v=bhu-official-stream" defer></script>
 </body>
 </html>
