@@ -59,7 +59,7 @@ Instead of manually searching through PDFs and institutional documents, users as
 
 ## 🏗 Architecture
 
-```
+```txt
 User
    │
    ▼
@@ -127,7 +127,7 @@ Final Response
 
 ## 📂 Project Structure
 
-```
+```txt
 backend/
  ├── app.py
  ├── config.py
@@ -144,7 +144,6 @@ frontend/
  ├── templates/
 
 docs/
-tests/
 
 Dockerfile
 docker-compose.yml
@@ -156,17 +155,37 @@ README.md
 
 ## ⚙ Installation
 
+Clone the repository:
+
 ```bash
-git clone <repository-url>
-cd CIMS-SAGE
+git clone https://github.com/That-ASHWIN/DST-AI.git
+cd DST-AI
+```
+
+Create and activate a virtual environment:
+
+```bash
 python -m venv .venv
 source .venv/bin/activate
 ```
+
+> On Windows PowerShell, use:
+>
+> ```powershell
+> .venv\Scripts\Activate.ps1
+> ```
 
 Install dependencies:
 
 ```bash
 pip install -r requirements.txt
+```
+
+Install and start Ollama, then pull the required model:
+
+```bash
+ollama pull llama3.1:8b
+ollama serve
 ```
 
 Run the server:
@@ -179,13 +198,25 @@ python3 -m uvicorn backend.app:app --reload
 
 ## 🔧 Environment Variables
 
-Create a `.env` file in the project root with the following:
+Create a `.env` file in the project root. You can copy the example file:
 
+```bash
+cp .env.example .env
 ```
+
+Then configure the following values:
+
+```env
 OLLAMA_BASE_URL=http://localhost:11434
 OLLAMA_MODEL=llama3.1:8b
 EMBEDDING_MODEL=all-MiniLM-L6-v2
+CHUNK_SIZE=500
+CHUNK_OVERLAP=100
+TOP_K_RESULTS=5
+MAX_UPLOAD_SIZE=26214400
 ```
+
+> Keep `.env` private. Do not commit local environment files or credentials to GitHub.
 
 ---
 
@@ -193,13 +224,13 @@ EMBEDDING_MODEL=all-MiniLM-L6-v2
 
 **Swagger UI**
 
-```
+```txt
 http://localhost:8000/docs
 ```
 
 **ReDoc**
 
-```
+```txt
 http://localhost:8000/redoc
 ```
 

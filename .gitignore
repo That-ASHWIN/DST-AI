@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs and runtime files
+*.log
+backend/logs/
+
+# Vector database / local storage
+chroma_db/
+*.sqlite3
+*.db
+
+# Uploaded/local documents
+uploads/
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
