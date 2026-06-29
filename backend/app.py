@@ -16,6 +16,8 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
 from backend.core.chatbot import get_chatbot
+from backend.storage.vector_db import get_document_count
+from backend.ingestion.text_loader import load_knowledge_base
 
 from backend.routes.chat_routes import router as chat_router
 from backend.routes.health_routes import router as health_router
@@ -44,6 +46,18 @@ async def lifespan(app: FastAPI):
     logger.info("Loading chatbot...")
     app.state.chatbot = get_chatbot()
     logger.info("Chatbot loaded.")
+
+    # Auto-seed the knowledge base on a fresh deployment (e.g. a cloud server
+    # with an empty disk) so the bot has data to answer from without any
+    # manual step.
+    try:
+        if get_document_count() == 0:
+            logger.info("Knowledge base is empty - auto-seeding from knowledge_base.txt ...")
+            inserted = load_knowledge_base()
+            logger.info("Auto-seeded knowledge base with %s chunk(s).", inserted)
+    except Exception:
+        logger.exception("Knowledge base auto-seed failed (continuing without it).")
+
     yield
     logger.info("Server shutting down.")
 

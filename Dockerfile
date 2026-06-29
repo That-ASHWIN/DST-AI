@@ -15,8 +15,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+# Cloud hosts (Render, HF Spaces, Railway) inject a PORT env var.
+# Default to 8000 for local runs.
+ENV PORT=8000
 EXPOSE 8000
 
-HEALTHCHECK CMD curl --fail http://localhost:8000/health/live || exit 1
+HEALTHCHECK CMD curl --fail http://localhost:${PORT:-8000}/health/live || exit 1
 
-CMD ["uvicorn", "backend.app:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["sh", "-c", "uvicorn backend.app:app --host 0.0.0.0 --port ${PORT:-8000}"]

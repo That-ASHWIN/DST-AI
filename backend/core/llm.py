@@ -1,16 +1,31 @@
-"""Ollama LLM client with model auto-resolution, normal + streaming generation."""
+"""LLM client.
+
+Two modes, chosen automatically:
+  * Hosted mode (USE_HOSTED_LLM): calls an OpenAI-compatible chat API such as
+    Groq's free API. Use this for 24/7 cloud deployment - no local Ollama and
+    no laptop required.
+  * Local mode: calls a local Ollama server. Good for offline development.
+"""
 import json
 import logging
 import time
 
 import requests
 
-from backend.config import OLLAMA_BASE_URL, OLLAMA_MODEL
+from backend.config import (
+    OLLAMA_BASE_URL,
+    OLLAMA_MODEL,
+    USE_HOSTED_LLM,
+    LLM_API_KEY,
+    LLM_BASE_URL,
+    LLM_MODEL,
+)
 
 logger = logging.getLogger(__name__)
 
 GENERATE_API = f"{OLLAMA_BASE_URL}/api/generate"
 TAGS_API = f"{OLLAMA_BASE_URL}/api/tags"
+CHAT_COMPLETIONS_API = f"{LLM_BASE_URL}/chat/completions"
 
 MAX_RETRIES = 2
 RETRY_DELAY_SECONDS = 1.5
@@ -25,8 +40,91 @@ OPTIONS = {
     "repeat_penalty": 1.05,
 }
 
+# Shared generation settings for the hosted API.
+HOSTED_TEMPERATURE = 0.1
+HOSTED_MAX_TOKENS = 700
+
 _resolved_model = None
 
+
+# ======================================================================
+# Hosted OpenAI-compatible API (Groq, OpenAI, Together, etc.)
+# ======================================================================
+
+def _hosted_headers():
+    return {
+        "Authorization": f"Bearer {LLM_API_KEY}",
+        "Content-Type": "application/json",
+    }
+
+
+def _hosted_generate(prompt: str) -> str:
+    payload = {
+        "model": LLM_MODEL,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": HOSTED_TEMPERATURE,
+        "max_tokens": HOSTED_MAX_TOKENS,
+        "stream": False,
+    }
+    try:
+        r = requests.post(CHAT_COMPLETIONS_API, headers=_hosted_headers(), json=payload, timeout=60)
+        r.raise_for_status()
+        data = r.json()
+        ans = (data["choices"][0]["message"]["content"] or "").strip()
+        if not ans:
+            raise RuntimeError("Hosted LLM returned an empty response")
+        return ans
+    except (requests.exceptions.Timeout, requests.exceptions.ConnectionError):
+        raise RuntimeError("Cannot reach the hosted LLM API. Check network / LLM_BASE_URL.")
+    except requests.exceptions.HTTPError as e:
+        detail = ""
+        try:
+            detail = e.response.text
+        except Exception:
+            pass
+        raise RuntimeError(f"Hosted LLM HTTP error (model '{LLM_MODEL}'): {detail or e}")
+
+
+def _hosted_stream(prompt: str):
+    payload = {
+        "model": LLM_MODEL,
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": HOSTED_TEMPERATURE,
+        "max_tokens": HOSTED_MAX_TOKENS,
+        "stream": True,
+    }
+    try:
+        with requests.post(CHAT_COMPLETIONS_API, headers=_hosted_headers(), json=payload, timeout=60, stream=True) as r:
+            r.raise_for_status()
+            for line in r.iter_lines(decode_unicode=True):
+                if not line:
+                    continue
+                if line.startswith("data:"):
+                    line = line[len("data:"):].strip()
+                if line == "[DONE]":
+                    break
+                try:
+                    data = json.loads(line)
+                except Exception:
+                    continue
+                choices = data.get("choices") or [{}]
+                delta = choices[0].get("delta", {}).get("content", "")
+                if delta:
+                    yield delta
+    except (requests.exceptions.Timeout, requests.exceptions.ConnectionError):
+        raise RuntimeError("Cannot reach the hosted LLM API. Check network / LLM_BASE_URL.")
+    except requests.exceptions.HTTPError as e:
+        detail = ""
+        try:
+            detail = e.response.text
+        except Exception:
+            pass
+        raise RuntimeError(f"Hosted LLM HTTP error (model '{LLM_MODEL}'): {detail or e}")
+
+
+# ======================================================================
+# Local Ollama
+# ======================================================================
 
 def list_models():
     """Return list of model names available in Ollama. Empty list if unreachable."""
@@ -40,12 +138,7 @@ def list_models():
 
 
 def resolve_model():
-    """Pick a usable model.
-
-    Prefer the configured OLLAMA_MODEL. If it isn't installed, fall back to a
-    model with the same base name, otherwise the first installed model. This
-    keeps the app working even when the exact tag is missing.
-    """
+    """Pick a usable Ollama model, falling back gracefully if the exact tag is missing."""
     global _resolved_model
     if _resolved_model:
         return _resolved_model
@@ -68,7 +161,16 @@ def resolve_model():
 
 
 def check_ollama():
-    """Diagnostic: report Ollama reachability, installed models, model in use."""
+    """Diagnostic for /health/llm. Reports hosted mode if a hosted key is set."""
+    if USE_HOSTED_LLM:
+        return {
+            "provider": "hosted",
+            "base_url": LLM_BASE_URL,
+            "model": LLM_MODEL,
+            "api_key_set": True,
+            "hint": "OK (using hosted LLM API - works 24/7 in the cloud)",
+        }
+
     models = list_models()
     reachable = bool(models)
     configured_present = any(
@@ -76,6 +178,7 @@ def check_ollama():
         for m in models
     )
     return {
+        "provider": "ollama",
         "ollama_url": OLLAMA_BASE_URL,
         "reachable": reachable,
         "configured_model": OLLAMA_MODEL,
@@ -89,9 +192,16 @@ def check_ollama():
     }
 
 
+# ======================================================================
+# Public API (auto-routes to hosted or local)
+# ======================================================================
+
 def generate_response(prompt: str, temperature: float = 0.2, max_retries: int = MAX_RETRIES) -> str:
     if not prompt or not prompt.strip():
         raise ValueError("Prompt cannot be empty")
+
+    if USE_HOSTED_LLM:
+        return _hosted_generate(prompt)
 
     model = resolve_model()
     payload = {"model": model, "prompt": prompt, "stream": False, "options": OPTIONS}
@@ -124,6 +234,10 @@ def generate_response(prompt: str, temperature: float = 0.2, max_retries: int = 
 def stream_response(prompt: str):
     if not prompt or not prompt.strip():
         raise ValueError("Prompt cannot be empty")
+
+    if USE_HOSTED_LLM:
+        yield from _hosted_stream(prompt)
+        return
 
     model = resolve_model()
     payload = {"model": model, "prompt": prompt, "stream": True, "options": OPTIONS}
