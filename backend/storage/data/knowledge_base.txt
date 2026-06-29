@@ -4,7 +4,7 @@ DST Centre for Interdisciplinary Mathematical Sciences (DST-CIMS), Banaras Hindu
 The DST Centre for Interdisciplinary Mathematical Sciences (DST-CIMS) is a research and training centre at Banaras Hindu University (BHU), Varanasi, under the Institute of Science. It was established with funding from the Department of Science and Technology (DST), Government of India, vide letter number SR/S4/MS:428/07 dated 20 November 2007. The centre was created to improve the overall quality of research and education in the Mathematical Sciences in Uttar Pradesh and adjoining areas, by bringing the needed expertise and facilities to one convenient location. Its primary mission is to impart training and research in Mathematical Sciences and to establish core-group research facilities in the region.
 
 [SECTION: COORDINATOR / LEADERSHIP]
-The Coordinator (head) of the DST Centre for Interdisciplinary Mathematical Sciences (DST-CIMS), BHU is Prof. Bankteshwar Tiwari. The centre is headed by a Coordinator. For official correspondence, contact the Coordinator at Email: dstcims@gmail.com, Phone: 0542-2369337.
+The Coordinator (current head) of the DST Centre for Interdisciplinary Mathematical Sciences (DST-CIMS), BHU is Prof. Raghavendra Chaubey, Professor of Applied Mathematics. The centre is headed by a Coordinator. For official correspondence, contact the Coordinator at Email: dstcims@gmail.com, Phone: 0542-2369337.
 
 [SECTION: COLLABORATING DEPARTMENTS]
 DST-CIMS was formed with the active cooperation of the Departments of Mathematics, Statistics, Computer Science, and Applied Mathematics of BHU. Scientists from other departments, such as the Department of Physics, have also actively contributed to and participated in its activities. This interdisciplinary structure is the core strength of the centre.
@@ -20,14 +20,14 @@ Admission to the M.Sc. programmes at BHU is generally done through the national-
 
 [SECTION: FACULTY]
 Faculty members associated with DST-CIMS include:
-- Prof. Bankteshwar Tiwari, Professor (Mathematics) and Coordinator of DST-CIMS. Research interests: Differential Geometry, Riemann-Finsler Geometry and Applications. Email: btiwari@bhu.ac.in, banktesht@gmail.com. Phone: 0542-2369337.
+- Prof. Raghavendra Chaubey, Professor (Applied Mathematics) and Coordinator of DST-CIMS. Research interests: General Theory of Relativity, Cosmology, Dynamical Systems, Dark Energy, Modified Gravity, Bouncing and Cyclic Universe, Bayesian and Observational Cosmology, Machine Learning in Cosmology, Finslerian Cosmology. Email: rchaubey@bhu.ac.in. Phone: 9919267475.
+- Prof. Bankteshwar Tiwari, Professor (Mathematics). Research interests: Differential Geometry, Riemann-Finsler Geometry and Applications. Email: btiwari@bhu.ac.in, banktesht@gmail.com. Phone: 0542-2369337.
 - Dr. Manjari Gupta, Professor (Computer Science). Research interests: Applications of Artificial Intelligence in Software Engineering, Machine Learning, Data Mining. Email: manjari@bhu.ac.in.
-- Dr. Raghavendra Chaubey, Professor (Applied Mathematics). Research interests: General Theory of Relativity, Cosmology, Dynamical Systems, Dark Energy, Modified Gravity, Machine Learning in Cosmology. Email: rchaubey@bhu.ac.in.
 - Ms. Jyoti Singh Kirar, Assistant Professor.
 - Dr. Ganga Ram, Assistant Professor.
 
 [SECTION: RESEARCH AREAS]
-Research at DST-CIMS spans several areas of the mathematical sciences, including: Differential Geometry and Riemann-Finsler Geometry; General Relativity, Cosmology and Dynamical Systems; Statistics and Computing; Signal and Image Processing; Machine Learning; and Applications of Artificial Intelligence in Software Engineering. The centre supports interdisciplinary research drawing on Mathematics, Statistics, Computer Science, Applied Mathematics, and Physics.
+Research at DST-CIMS spans several areas of the mathematical sciences, including: General Relativity, Cosmology and Dynamical Systems; Differential Geometry and Riemann-Finsler Geometry; Statistics and Computing; Signal and Image Processing; Machine Learning; and Applications of Artificial Intelligence in Software Engineering. The centre supports interdisciplinary research drawing on Mathematics, Statistics, Computer Science, Applied Mathematics, and Physics.
 
 [SECTION: ACADEMIC ACTIVITIES]
 DST-CIMS regularly organises academic activities such as workshops, short-term training programmes, conferences, and seminars in the mathematical sciences. These activities are aimed at students, young researchers, and teachers. The Department of Statistics & DST-CIMS also conducts campus placements for its M.Sc. batches.
@@ -38,6 +38,6 @@ Research scholars at DST-CIMS may be supported through standard fellowships avai
 [SECTION: CONTACT]
 DST Centre for Interdisciplinary Mathematical Sciences (DST-CIMS),
 Institute of Science, Banaras Hindu University (BHU), Varanasi - 221005, Uttar Pradesh, India.
-Coordinator: Prof. Bankteshwar Tiwari.
+Coordinator: Prof. Raghavendra Chaubey.
 Email: dstcims@gmail.com. Phone: 0542-2369337.
 Official page: https://www.bhu.ac.in/site/UnitHomeTemplate/1_233_3536_DST-Centre-for-Interdisciplinary-Mathematical-Sciences-Home

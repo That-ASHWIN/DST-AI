@@ -33,7 +33,7 @@ RESEARCH_URL = "https://bhu.irins.org/faculty/index/DST+Centre+for+Interdiscipli
 RELATED_LINKS = {
     "faculty": ("DST-CIMS Faculty page", FACULTY_URL,
                 ["faculty", "professor", "teacher", "teachers", "staff",
-                 "coordinator", "teaching", "mentor"]),
+                 "coordinator", "director", "head", "teaching", "mentor"]),
     "courses": ("DST-CIMS Programmes & courses", HOME_URL,
                 ["course", "courses", "programme", "program", "m.sc", "msc",
                  "syllabus", "subject", "subjects", "study", "degree", "phd",
@@ -55,7 +55,7 @@ RELATED_LINKS = {
 # Mandatory Contact Footer (two trailing spaces = Markdown hard line break).
 CONTACT_FOOTER = (
     "\n\nFor further information, please contact:  \n"
-    "Coordinator: Prof. Bankteshwar Tiwari  \n"
+    "Coordinator: Prof. Raghavendra Chaubey  \n"
     "Email: dstcims@gmail.com  \n"
     "Phone: 0542-2369337"
 )
