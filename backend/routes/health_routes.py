@@ -9,6 +9,7 @@ from datetime import datetime, timezone
 from fastapi import APIRouter, Response, status
 
 from backend.storage.vector_db import get_document_count
+from backend.core.llm import check_ollama
 
 router = APIRouter(
     prefix="/health",
@@ -42,11 +43,7 @@ def live():
 
 @router.get("/ready")
 def ready(response: Response):
-    """
-    Readiness probe — checks whether the service can actually serve traffic
-    (i.e. the vector DB is reachable). Returns 503 when not ready so that
-    load balancers / orchestrators correctly route traffic away.
-    """
+    """Readiness probe — checks whether the vector DB is reachable."""
     try:
         chunks = get_document_count()
         return {
@@ -63,6 +60,15 @@ def ready(response: Response):
             "status": "not_ready",
             "database": "disconnected",
         }
+
+
+@router.get("/llm")
+def llm_health(response: Response):
+    """Diagnostic for the Ollama LLM: reachability + installed models."""
+    info = check_ollama()
+    if not info.get("reachable"):
+        response.status_code = status.HTTP_503_SERVICE_UNAVAILABLE
+    return info
 
 
 @router.get("/system")
