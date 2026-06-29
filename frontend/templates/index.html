@@ -3,77 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CIMS SAGE 2 · SuperBot Style Assistant</title>
-  <link rel="stylesheet" href="/static/css/style.css?v=superbot2" />
+  <title>DST-CIMS BHU · CIMS SAGE AI Assistant</title>
+  <link rel="stylesheet" href="/static/css/style.css?v=bhu-cims" />
 </head>
 <body>
-  <header class="cu-navbar">
-    <div class="cu-logo"><span>CU</span><div>CHANDIGARH<br>UNIVERSITY</div></div>
+  <header class="bhu-topbar">
+    <div class="bhu-logo">
+      <div class="seal">ॐ</div>
+      <div>
+        <strong>Banaras Hindu University</strong>
+        <span>DST Centre for Interdisciplinary Mathematical Sciences</span>
+      </div>
+    </div>
     <nav>
-      <a>ABOUT</a><a>PROGRAMS</a><a>ACADEMICS</a><a>ADMISSIONS</a><a>CAMPUS LIFE</a><a>PLACEMENTS</a><a>RESEARCH & INNOVATION</a>
+      <a>Home</a><a>About</a><a>Academics</a><a>Research</a><a>People</a><a>Contact</a>
     </nav>
-    <button class="helpline">☎ 180012128800</button>
   </header>
 
-  <main class="hero">
-    <section class="hero-copy">
-      <h1>Best Private <b>University</b><br>in Punjab (India)</h1>
-      <p>Department-level AI assistant for admissions, courses, fees, faculty, research and scholarships.</p>
-      <button class="apply-btn">APPLY TODAY →</button>
+  <main class="bhu-page">
+    <section class="bhu-hero">
+      <p class="sub">DST-CIMS · BHU, Varanasi</p>
+      <h1>DST Centre for Interdisciplinary<br>Mathematical Sciences</h1>
+      <p class="lead">Official department-style AI assistant for programmes, admissions, research, faculty, scholarships and centre information.</p>
     </section>
-    <section class="apply-card">
-      <h3>APPLY TODAY FOR<br><b>CHANDIGARH UNIVERSITY, INDIA</b></h3>
-      <input placeholder="STUDENT NAME" />
-      <input placeholder="+91  STUDENT MOBILE" />
-      <input placeholder="SELECT DISCIPLINE" />
-      <button>REGISTER NOW</button>
+    <section class="notice-card">
+      <h3>Department Help Desk</h3>
+      <p>Use the floating AI assistant at bottom-right to ask department-specific questions.</p>
+      <ul>
+        <li>M.Sc. Courses</li>
+        <li>Admissions & Eligibility</li>
+        <li>Research Areas</li>
+        <li>Faculty & Scholarships</li>
+      </ul>
     </section>
   </main>
 
-  <button id="sageLauncher" class="chat-orb" aria-label="Open CIMS SAGE 2">💬</button>
+  <button id="sageLauncher" class="sage-launcher" aria-label="Open DST-CIMS AI Assistant">
+    <span>💬</span>
+  </button>
 
-  <section id="sageWidget" class="superbot-widget" aria-label="CIMS SAGE 2">
-    <header class="bot-top">
-      <div class="bot-avatar">🎓</div>
-      <div class="bot-title">
-        <strong>CIMS SAGE 2</strong>
-        <span><i id="healthDot" class="online-dot"></i><span id="healthText">Connected</span></span>
+  <section id="sageWidget" class="sage-widget closed" aria-label="DST-CIMS AI Assistant">
+    <header class="sage-head">
+      <div class="bot-mark">🎓</div>
+      <div class="bot-info">
+        <strong>DST-CIMS AI Assistant</strong>
+        <span><i id="healthDot"></i><span id="healthText">Connecting</span> · BHU</span>
       </div>
-      <button id="minBtn" title="Minimize">−</button>
-      <button id="closeBtn" title="Close">×</button>
+      <button id="minBtn" type="button">−</button>
+      <button id="closeBtn" type="button">×</button>
     </header>
 
     <div id="modeScreen" class="mode-screen">
-      <div class="welcome-card">
-        <h2>How would you like to chat?</h2>
-        <p>Choose your preferred way to connect with us</p>
-        <button class="mode-option" data-mode="voice"><span class="mode-icon">🎙️</span><b>Voice</b><small>Talk naturally with AI</small><em>›</em></button>
-        <button class="mode-option" data-mode="text"><span class="mode-icon">💬</span><b>Text</b><small>Type your messages</small><em>›</em></button>
+      <div class="welcome-box">
+        <h2>Welcome to DST-CIMS, BHU</h2>
+        <p>How would you like to chat?</p>
+        <button class="mode-btn" data-mode="text">
+          <span>💬</span><b>Text Chat</b><small>Ask department questions</small><em>›</em>
+        </button>
+        <button class="mode-btn" data-mode="voice">
+          <span>🎙️</span><b>Voice</b><small>Coming soon</small><em>›</em>
+        </button>
       </div>
-      <div class="powered">powered by <b>CIMS SAGE</b></div>
+      <p class="powered">Powered by <b>CIMS SAGE 2</b></p>
     </div>
 
     <div id="chatScreen" class="chat-screen hidden">
-      <div class="dept-tabs">
-        <button data-dept="auto" class="active">Auto</button>
-        <button data-dept="computer-science">CS</button>
-        <button data-dept="mathematics">Maths</button>
-        <button data-dept="mba">MBA</button>
+      <div class="chips">
+        <button data-prompt="What courses are offered by DST-CIMS BHU?">Courses</button>
+        <button data-prompt="What is the admission eligibility for DST-CIMS?">Eligibility</button>
+        <button data-prompt="Tell me about research areas at DST-CIMS BHU.">Research</button>
+        <button data-prompt="How can I contact DST-CIMS BHU?">Contact</button>
       </div>
       <div id="chatMessages" class="chat-body">
-        <div class="msg ai"><div class="bubble"><b>🙏 Namaste! Welcome to DST-CIMS, BHU.</b><br><br>Main <b>CIMS SAGE 2</b> hoon — aap courses, admission, fees, eligibility, faculty aur research ke baare me pooch sakte ho.</div></div>
+        <article class="msg ai">
+          <div class="bubble">
+            <b>🙏 Namaste! Welcome to DST-CIMS, BHU.</b><br><br>
+            Main <b>CIMS SAGE 2</b> hoon — aap DST Centre for Interdisciplinary Mathematical Sciences ke courses, admissions, eligibility, research, faculty aur scholarships ke baare me pooch sakte ho.
+          </div>
+        </article>
       </div>
-      <form id="chatForm" class="chat-input">
-        <input id="messageInput" autocomplete="off" placeholder="Ask CIMS SAGE anything..." />
+      <form id="chatForm" class="composer">
+        <input id="messageInput" autocomplete="off" placeholder="Ask DST-CIMS anything..." />
         <button type="submit">➤</button>
       </form>
-      <div class="powered small">Powered by Gemini AI · Official DST-CIMS Site</div>
+      <p class="powered small">Official DST-CIMS assistant · Verify important information</p>
     </div>
   </section>
 
   <div id="toastHost" class="toast-host"></div>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
-  <script src="/static/js/app.js?v=superbot2" defer></script>
+  <script src="/static/js/app.js?v=bhu-cims" defer></script>
 </body>
 </html>
