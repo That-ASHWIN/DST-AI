@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DST-CIMS BHU · CIMS SAGE AI Assistant</title>
-  <link rel="stylesheet" href="/static/css/style.css?v=bhu-cims" />
+  <link rel="stylesheet" href="/static/css/style.css?v=direct-chat" />
 </head>
 <body>
   <header class="bhu-topbar">
@@ -42,7 +42,7 @@
     <span>💬</span>
   </button>
 
-  <section id="sageWidget" class="sage-widget closed" aria-label="DST-CIMS AI Assistant">
+  <section id="sageWidget" class="sage-widget" aria-label="DST-CIMS AI Assistant">
     <header class="sage-head">
       <div class="bot-mark">🎓</div>
       <div class="bot-info">
@@ -53,46 +53,34 @@
       <button id="closeBtn" type="button">×</button>
     </header>
 
-    <div id="modeScreen" class="mode-screen">
-      <div class="welcome-box">
-        <h2>Welcome to DST-CIMS, BHU</h2>
-        <p>How would you like to chat?</p>
-        <button class="mode-btn" data-mode="text">
-          <span>💬</span><b>Text Chat</b><small>Ask department questions</small><em>›</em>
-        </button>
-        <button class="mode-btn" data-mode="voice">
-          <span>🎙️</span><b>Voice</b><small>Coming soon</small><em>›</em>
-        </button>
-      </div>
-      <p class="powered">Powered by <b>CIMS SAGE 2</b></p>
-    </div>
-
-    <div id="chatScreen" class="chat-screen hidden">
-      <div class="chips">
-        <button data-prompt="What courses are offered by DST-CIMS BHU?">Courses</button>
-        <button data-prompt="What is the admission eligibility for DST-CIMS?">Eligibility</button>
-        <button data-prompt="Tell me about research areas at DST-CIMS BHU.">Research</button>
-        <button data-prompt="How can I contact DST-CIMS BHU?">Contact</button>
-      </div>
+    <div id="chatScreen" class="chat-screen">
       <div id="chatMessages" class="chat-body">
         <article class="msg ai">
           <div class="bubble">
             <b>🙏 Namaste! Welcome to DST-CIMS, BHU.</b><br><br>
-            Main <b>CIMS SAGE 2</b> hoon — aap DST Centre for Interdisciplinary Mathematical Sciences ke courses, admissions, eligibility, research, faculty aur scholarships ke baare me pooch sakte ho.
+            Main <b>CIMS SAGE 2</b> hoon — aap DST Centre for Interdisciplinary Mathematical Sciences ke courses, admissions, eligibility, research, faculty aur scholarships ke baare me seedha question pooch sakte ho.
           </div>
         </article>
       </div>
+
+      <div class="quick-row">
+        <button data-prompt="What courses are offered by DST-CIMS BHU?">📚 Courses</button>
+        <button data-prompt="What is the admission eligibility for DST-CIMS?">✅ Eligibility</button>
+        <button data-prompt="Tell me about research areas at DST-CIMS BHU.">🔬 Research</button>
+        <button data-prompt="How can I contact DST-CIMS BHU?">☎ Contact</button>
+      </div>
+
       <form id="chatForm" class="composer">
-        <input id="messageInput" autocomplete="off" placeholder="Ask DST-CIMS anything..." />
+        <input id="messageInput" autocomplete="off" placeholder="Ask CIMS SAGE anything..." />
         <button type="submit">➤</button>
       </form>
-      <p class="powered small">Official DST-CIMS assistant · Verify important information</p>
+      <p class="powered small">Powered by CIMS SAGE 2 · Official DST-CIMS Assistant</p>
     </div>
   </section>
 
   <div id="toastHost" class="toast-host"></div>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
-  <script src="/static/js/app.js?v=bhu-cims" defer></script>
+  <script src="/static/js/app.js?v=direct-chat" defer></script>
 </body>
 </html>
