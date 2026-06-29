@@ -18,6 +18,9 @@ The centre is also involved in Ph.D. (doctoral) research programmes across Mathe
 [SECTION: ADMISSIONS AND ELIGIBILITY]
 Admission to the M.Sc. programmes at BHU is generally done through the national-level entrance examination (CUET-PG) conducted for postgraduate admissions. Ph.D. admissions follow the BHU research admission process (such as RET / national fellowships as applicable). Eligibility typically requires a relevant bachelor's or master's degree with the required percentage as specified by BHU. Because eligibility criteria, cut-offs, and the admission calendar change every year, candidates should always verify the latest details from the official BHU admission portal (admission.bhu.ac.in) or the DST-CIMS office before applying.
 
+[SECTION: FEES]
+The fee structure for the M.Sc. and Ph.D. programmes at DST-CIMS is as per the standard fee norms of Banaras Hindu University (BHU) for the respective programme and academic session. Fees are paid through the official BHU online admission and registration system at the time of admission. The fees are generally modest as BHU is a central government university. Because the exact fee amounts are revised by the university every academic year, students should always check the latest fee details on the official BHU admission portal (admission.bhu.ac.in) or contact the DST-CIMS office. Eligible students may also reduce their costs through scholarships and fellowships (see the Scholarships and Fellowships section).
+
 [SECTION: FACULTY]
 Faculty members associated with DST-CIMS include:
 - Prof. Bankteshwar Tiwari, Professor (Mathematics) and Coordinator of DST-CIMS. Research interests: Differential Geometry, Riemann-Finsler Geometry and Applications. Email: btiwari@bhu.ac.in, banktesht@gmail.com. Phone: 0542-2369337.
@@ -33,7 +36,7 @@ Research at DST-CIMS spans several areas of the mathematical sciences, including
 DST-CIMS regularly organises academic activities such as workshops, short-term training programmes, conferences, and seminars in the mathematical sciences. These activities are aimed at students, young researchers, and teachers. The Department of Statistics & DST-CIMS also conducts campus placements for its M.Sc. batches.
 
 [SECTION: SCHOLARSHIPS AND FELLOWSHIPS]
-Research scholars at DST-CIMS may be supported through standard fellowships available at BHU and national funding agencies (such as UGC/CSIR JRF/SRF and DST-supported project fellowships), subject to eligibility and availability. For exact scholarship and fellowship details, students should contact the DST-CIMS office or check the official BHU notifications.
+Research scholars at DST-CIMS may be supported through standard fellowships available at BHU and national funding agencies (such as UGC/CSIR JRF/SRF and DST-supported project fellowships), subject to eligibility and availability. M.Sc. students may also be eligible for merit-based and need-based scholarships as per BHU norms. For exact scholarship and fellowship details, students should contact the DST-CIMS office or check the official BHU notifications.
 
 [SECTION: CONTACT]
 DST Centre for Interdisciplinary Mathematical Sciences (DST-CIMS),

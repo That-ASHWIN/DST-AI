@@ -24,7 +24,7 @@ LANGUAGE_INSTRUCTIONS = {
 # When the bot produces this, we return ONLY this clean message - no related
 # links and no contact footer.
 OUT_OF_SCOPE_MESSAGE = (
-    "I'm sorry, but I can't help with that. As CIMS SAGE 2, I'm an academic "
+    "I'm sorry, but I can't help with that. As DST AI, I'm an academic "
     "assistant and can only answer questions related to the studies and topics "
     "of DST-CIMS, BHU."
 )

@@ -1,6 +1,6 @@
 """
 app.py
-Main FastAPI application for CIMS SAGE
+Main FastAPI application for DST AI
 """
 
 import logging
@@ -67,8 +67,8 @@ async def lifespan(app: FastAPI):
 # --------------------------------------------------------
 
 app = FastAPI(
-    title="CIMS SAGE API",
-    description="AI Assistant for DST-CIMS BHU",
+    title="DST AI API",
+    description="DST AI - Official AI Assistant for DST-CIMS, BHU",
     version="1.0.0",
     docs_url="/docs",
     redoc_url="/redoc",
@@ -245,5 +245,5 @@ async def api_status():
     return {
         "status": "ok",
         "version": app.version,
-        "project": "CIMS SAGE",
+        "project": "DST AI",
     }
