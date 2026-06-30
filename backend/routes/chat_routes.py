@@ -8,7 +8,7 @@ class ChatRequest(BaseModel):
     query:str=Field(...,min_length=1,max_length=4096,description="User message")
     department:str|None=Field("auto",description="Department filter: auto, computer-science, mathematics, mba, general")
 class ChatResponse(BaseModel): response:str; request_id:str|None=None; department:str|None=None
-@router.post("/chat",response_model=ChatResponse,summary="Chat with CIMS SAGE 2")
+@router.post("/chat",response_model=ChatResponse,summary="Chat with DST AI")
 def chat(request:ChatRequest,http_request:Request):
     request_id=getattr(http_request.state,"request_id",None); chatbot=http_request.app.state.chatbot
     try: return ChatResponse(response=chatbot.chat(request.query,request.department),request_id=request_id,department=request.department)

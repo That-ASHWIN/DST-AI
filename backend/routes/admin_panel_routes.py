@@ -9,7 +9,7 @@ PAGE = """<!DOCTYPE html>
 <head>
 <meta charset='UTF-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<title>CIMS Sage - Admin Panel</title>
+<title>DST AI - Admin Panel</title>
 <style>
 :root{--blue:#00518a;--blue-dark:#003f6b;--accent:#1c84c6;--bg:#f5f9fc;}
 *{box-sizing:border-box;font-family:Segoe UI,Arial,sans-serif;}
@@ -33,7 +33,7 @@ button:hover{background:var(--blue-dark);}
 </head>
 <body>
 <header>
-<h1>CIMS Sage - Admin Panel</h1>
+<h1>DST AI - Admin Panel</h1>
 <p>DST-CIMS knowledge base management (staff only)</p>
 </header>
 <div class='wrap'>
