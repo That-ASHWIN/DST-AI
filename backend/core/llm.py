@@ -30,13 +30,15 @@ CHAT_COMPLETIONS_API = f"{LLM_BASE_URL}/chat/completions"
 MAX_RETRIES = 2
 RETRY_DELAY_SECONDS = 1.5
 
-# Lower context + output keeps memory/CPU usage modest so laptops don't hang.
+# Context window large enough to hold the system prompt + a few retrieved
+# sections so the model always sees full faculty/contact data. num_predict is
+# kept modest so laptops stay responsive.
 OPTIONS = {
     "temperature": 0.1,
     "top_p": 0.8,
     "top_k": 20,
-    "num_predict": 300,
-    "num_ctx": 2048,
+    "num_predict": 400,
+    "num_ctx": 4096,
     "repeat_penalty": 1.05,
 }
 

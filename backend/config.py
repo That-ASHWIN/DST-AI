@@ -49,9 +49,14 @@ EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 # ==========================
 # RAG SETTINGS
 # ==========================
-CHUNK_SIZE = 500
-CHUNK_OVERLAP = 100
-TOP_K_RESULTS = 2
+# CHUNK_SIZE is large enough that each '[SECTION: ...]' block in
+# knowledge_base.txt stays together as ONE chunk (so faculty names, contacts,
+# etc. are never split across chunks and retrieved incompletely).
+CHUNK_SIZE = 1200
+CHUNK_OVERLAP = 150
+# Retrieve a few sections so multi-part questions (e.g. faculty + contact) get
+# enough context.
+TOP_K_RESULTS = 4
 
 # ==========================
 # SECURITY
