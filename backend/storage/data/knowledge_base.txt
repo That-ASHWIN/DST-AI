@@ -1,46 +1,46 @@
-DST Centre for Interdisciplinary Mathematical Sciences (DST-CIMS), Banaras Hindu University (BHU), Varanasi - 221005, Uttar Pradesh, India.
+DST CENTRE FOR INTERDISCIPLINARY MATHEMATICAL SCIENCES (DST-CIMS), BANARAS HINDU UNIVERSITY (BHU)
+Official department knowledge base.
 
-[SECTION: ABOUT DST-CIMS]
-The DST Centre for Interdisciplinary Mathematical Sciences (DST-CIMS) is a research and training centre at Banaras Hindu University (BHU), Varanasi, under the Institute of Science. It was established with funding from the Department of Science and Technology (DST), Government of India, vide letter number SR/S4/MS:428/07 dated 20 November 2007. The centre was created to improve the overall quality of research and education in the Mathematical Sciences in Uttar Pradesh and adjoining areas, by bringing the needed expertise and facilities to one convenient location. Its primary mission is to impart training and research in Mathematical Sciences and to establish core-group research facilities in the region.
+[SECTION: ABOUT]
+CIMS BHU stands for the DST Centre for Interdisciplinary Mathematical Sciences at Banaras Hindu University. CIMS BHU is located at Banaras Hindu University (BHU), Varanasi - 221005, Uttar Pradesh, India. CIMS BHU operates under the Institute of Science at Banaras Hindu University. CIMS BHU was established with funding from the Department of Science and Technology (DST), Government of India. CIMS BHU was established vide letter number SR/S4/MS:428/07 dated 20 November 2007. The primary mission of CIMS BHU is to improve the overall quality of research and education in the Mathematical Sciences in Uttar Pradesh and adjoining areas. CIMS BHU aims to bring needed expertise and facilities to one convenient location for Mathematical Sciences research. CIMS BHU imparts training and research in Mathematical Sciences. CIMS BHU establishes core-group research facilities in the Mathematical Sciences region.
 
-[SECTION: COORDINATOR / LEADERSHIP]
-The Coordinator (current head) of the DST Centre for Interdisciplinary Mathematical Sciences (DST-CIMS), BHU is Prof. Bankteshwar Tiwari, Professor of Mathematics. The centre is headed by a Coordinator. For official correspondence, contact the Coordinator at Email: dstcims@gmail.com, Phone: 0542-2369337.
+[SECTION: OBJECTIVES]
+The objective of CIMS BHU is to improve the quality of research and education in Mathematical Sciences in Uttar Pradesh and adjoining areas. The objective of CIMS BHU is to bring interdisciplinary expertise from Mathematics, Statistics, Computer Science, and Applied Mathematics together at Banaras Hindu University. The objective of CIMS BHU is to provide training and research opportunities in Mathematical Sciences to students and researchers. The objective of CIMS BHU is to establish core-group research facilities for the mathematical sciences community in the region. Please contact the CIMS office for the exact current list of stated objectives published on the official website.
+
+[SECTION: COORDINATOR AND LEADERSHIP]
+The Coordinator of CIMS BHU is Prof. Bankteshwar Tiwari. Prof. Bankteshwar Tiwari is a Professor of Mathematics at Banaras Hindu University. CIMS BHU is headed by a Coordinator. The official email of the CIMS BHU Coordinator is dstcims@gmail.com. The official phone number of the CIMS BHU Coordinator is 0542-2369337. For official correspondence with CIMS BHU, candidates should contact the Coordinator at dstcims@gmail.com or 0542-2369337.
 
 [SECTION: COLLABORATING DEPARTMENTS]
-DST-CIMS was formed with the active cooperation of the Departments of Mathematics, Statistics, Computer Science, and Applied Mathematics of BHU. Scientists from other departments, such as the Department of Physics, have also actively contributed to and participated in its activities. This interdisciplinary structure is the core strength of the centre.
+CIMS BHU was formed with active cooperation from the Department of Mathematics at Banaras Hindu University. CIMS BHU was formed with active cooperation from the Department of Statistics at Banaras Hindu University. CIMS BHU was formed with active cooperation from the Department of Computer Science at Banaras Hindu University. CIMS BHU was formed with active cooperation from the Department of Applied Mathematics at Banaras Hindu University. Scientists from the Department of Physics at Banaras Hindu University have also actively contributed to CIMS BHU activities. The interdisciplinary structure involving Mathematics, Statistics, Computer Science, Applied Mathematics, and Physics is the core strength of CIMS BHU.
 
-[SECTION: COURSES OFFERED]
-DST-CIMS offers postgraduate and doctoral programmes in the mathematical and computing sciences. The main postgraduate (M.Sc.) programmes associated with the centre include:
-- M.Sc. in Statistics and Computing
-- M.Sc. in Signal and Image Processing
-The centre is also involved in Ph.D. (doctoral) research programmes across Mathematics, Statistics, Computer Science, and Applied Mathematics. For the exact current list of programmes, intake, and syllabi, please refer to the official DST-CIMS page on the BHU website or contact the centre directly.
-
-[SECTION: ADMISSIONS AND ELIGIBILITY]
-Admission to the M.Sc. programmes at BHU is generally done through the national-level entrance examination (CUET-PG) conducted for postgraduate admissions. Ph.D. admissions follow the BHU research admission process (such as RET / national fellowships as applicable). Eligibility typically requires a relevant bachelor's or master's degree with the required percentage as specified by BHU. Because eligibility criteria, cut-offs, and the admission calendar change every year, candidates should always verify the latest details from the official BHU admission portal (admission.bhu.ac.in) or the DST-CIMS office before applying.
+[SECTION: PROGRAMMES AND ELIGIBILITY]
+CIMS BHU offers postgraduate programmes in mathematical and computing sciences. CIMS BHU offers an M.Sc. programme in Statistics and Computing. CIMS BHU offers an M.Sc. programme in Signal and Image Processing. CIMS BHU is involved in Ph.D. doctoral research programmes across Mathematics, Statistics, Computer Science, and Applied Mathematics. Admission to the M.Sc. programmes at CIMS BHU is generally done through the CUET-PG national-level entrance examination conducted for postgraduate admissions at Banaras Hindu University. Ph.D. admissions at CIMS BHU follow the standard Banaras Hindu University research admission process, such as RET or applicable national fellowships. Eligibility for CIMS BHU programmes typically requires a relevant bachelor's or master's degree with the percentage specified by Banaras Hindu University. Please contact the CIMS office for the exact current list of programmes, intake numbers, and syllabi. Please contact the CIMS office for the exact current eligibility cut-offs and admission calendar, or check the BHU admission portal at https://admission.bhu.ac.in.
 
 [SECTION: FEES]
-The fee structure for the M.Sc. and Ph.D. programmes at DST-CIMS is as per the standard fee norms of Banaras Hindu University (BHU) for the respective programme and academic session. Fees are paid through the official BHU online admission and registration system at the time of admission. The fees are generally modest as BHU is a central government university. Because the exact fee amounts are revised by the university every academic year, students should always check the latest fee details on the official BHU admission portal (admission.bhu.ac.in) or contact the DST-CIMS office. Eligible students may also reduce their costs through scholarships and fellowships (see the Scholarships and Fellowships section).
+The fee structure for M.Sc. programmes at CIMS BHU follows the standard fee norms of Banaras Hindu University. The fee structure for Ph.D. programmes at CIMS BHU follows the standard fee norms of Banaras Hindu University. Fees for CIMS BHU programmes are paid through the official Banaras Hindu University online admission and registration system at the time of admission. Fees at CIMS BHU are generally modest because Banaras Hindu University is a central government university. Please contact the CIMS office for the exact current fee structure, or check the BHU admission portal at https://admission.bhu.ac.in.
 
-[SECTION: FACULTY]
-Faculty members associated with DST-CIMS include:
-- Prof. Bankteshwar Tiwari, Professor (Mathematics) and Coordinator of DST-CIMS. Research interests: Differential Geometry, Riemann-Finsler Geometry and Applications. Email: btiwari@bhu.ac.in, banktesht@gmail.com. Phone: 0542-2369337.
-- Prof. Raghavendra Chaubey, Professor (Applied Mathematics). Research interests: General Theory of Relativity, Cosmology, Dynamical Systems, Dark Energy, Modified Gravity, Bouncing and Cyclic Universe, Bayesian and Observational Cosmology, Machine Learning in Cosmology, Finslerian Cosmology. Email: rchaubey@bhu.ac.in.
-- Dr. Manjari Gupta, Professor (Computer Science). Research interests: Applications of Artificial Intelligence in Software Engineering, Machine Learning, Data Mining. Email: manjari@bhu.ac.in.
-- Ms. Jyoti Singh Kirar, Assistant Professor.
-- Dr. Ganga Ram, Assistant Professor.
+[SECTION: FACULTY DIRECTORY]
+Prof. Bankteshwar Tiwari is a Professor of Mathematics at CIMS BHU and serves as the Coordinator of CIMS BHU. The research interests of Prof. Bankteshwar Tiwari at CIMS BHU include Differential Geometry, Riemann-Finsler Geometry, and their Applications. The email of Prof. Bankteshwar Tiwari at CIMS BHU is btiwari@bhu.ac.in or banktesht@gmail.com. The phone number of Prof. Bankteshwar Tiwari at CIMS BHU is 0542-2369337.
+Prof. Raghavendra Chaubey is a Professor of Applied Mathematics at CIMS BHU. The research interests of Prof. Raghavendra Chaubey at CIMS BHU include General Theory of Relativity, Cosmology, Dynamical Systems, Dark Energy, Modified Gravity, Bouncing and Cyclic Universe, Bayesian and Observational Cosmology, Machine Learning in Cosmology, and Finslerian Cosmology. The email of Prof. Raghavendra Chaubey at CIMS BHU is rchaubey@bhu.ac.in.
+Dr. Manjari Gupta is a Professor of Computer Science at CIMS BHU. The research interests of Dr. Manjari Gupta at CIMS BHU include Applications of Artificial Intelligence in Software Engineering, Machine Learning, and Data Mining. The email of Dr. Manjari Gupta at CIMS BHU is manjari@bhu.ac.in.
+Ms. Jyoti Singh Kirar is an Assistant Professor at CIMS BHU.
+Dr. Ganga Ram is an Assistant Professor at CIMS BHU.
+Please contact the CIMS office for the complete and current faculty directory, including any newly appointed faculty members.
 
 [SECTION: RESEARCH AREAS]
-Research at DST-CIMS spans several areas of the mathematical sciences, including: Differential Geometry and Riemann-Finsler Geometry; General Relativity, Cosmology and Dynamical Systems; Statistics and Computing; Signal and Image Processing; Machine Learning; and Applications of Artificial Intelligence in Software Engineering. The centre supports interdisciplinary research drawing on Mathematics, Statistics, Computer Science, Applied Mathematics, and Physics.
+CIMS BHU conducts research in Differential Geometry and Riemann-Finsler Geometry. CIMS BHU conducts research in General Relativity, Cosmology, and Dynamical Systems. CIMS BHU conducts research in Statistics and Computing. CIMS BHU conducts research in Signal and Image Processing. CIMS BHU conducts research in Machine Learning. CIMS BHU conducts research in Applications of Artificial Intelligence in Software Engineering. CIMS BHU supports interdisciplinary research drawing on Mathematics, Statistics, Computer Science, Applied Mathematics, and Physics.
 
 [SECTION: ACADEMIC ACTIVITIES]
-DST-CIMS regularly organises academic activities such as workshops, short-term training programmes, conferences, and seminars in the mathematical sciences. These activities are aimed at students, young researchers, and teachers. The Department of Statistics & DST-CIMS also conducts campus placements for its M.Sc. batches.
+CIMS BHU regularly organizes workshops in the mathematical sciences. CIMS BHU regularly organizes short-term training programmes in the mathematical sciences. CIMS BHU regularly organizes conferences in the mathematical sciences. CIMS BHU regularly organizes seminars in the mathematical sciences. The academic activities of CIMS BHU are aimed at students, young researchers, and teachers.
+
+[SECTION: PLACEMENT DETAILS]
+The Department of Statistics at Banaras Hindu University, in coordination with CIMS BHU, conducts campus placements for its M.Sc. batches. Please contact the CIMS office for the exact current placement statistics, recruiting companies, and average package details.
 
 [SECTION: SCHOLARSHIPS AND FELLOWSHIPS]
-Research scholars at DST-CIMS may be supported through standard fellowships available at BHU and national funding agencies (such as UGC/CSIR JRF/SRF and DST-supported project fellowships), subject to eligibility and availability. M.Sc. students may also be eligible for merit-based and need-based scholarships as per BHU norms. For exact scholarship and fellowship details, students should contact the DST-CIMS office or check the official BHU notifications.
+Research scholars at CIMS BHU may be supported through standard fellowships available at Banaras Hindu University. Research scholars at CIMS BHU may be supported through national funding agencies such as UGC/CSIR JRF/SRF fellowships. Research scholars at CIMS BHU may be supported through DST-supported project fellowships, subject to eligibility and availability. M.Sc. students at CIMS BHU may be eligible for merit-based scholarships as per Banaras Hindu University norms. M.Sc. students at CIMS BHU may be eligible for need-based scholarships as per Banaras Hindu University norms. Please contact the CIMS office for exact current scholarship and fellowship details.
 
-[SECTION: CONTACT]
-DST Centre for Interdisciplinary Mathematical Sciences (DST-CIMS),
-Institute of Science, Banaras Hindu University (BHU), Varanasi - 221005, Uttar Pradesh, India.
-Coordinator: Prof. Bankteshwar Tiwari.
-Email: dstcims@gmail.com. Phone: 0542-2369337.
-Official page: https://www.bhu.ac.in/site/UnitHomeTemplate/1_233_3536_DST-Centre-for-Interdisciplinary-Mathematical-Sciences-Home
+[SECTION: PUBLICATIONS]
+Please contact the CIMS office for the exact current list of publications by CIMS BHU faculty members.
+
+[SECTION: CONTACT INFORMATION]
+The full name of CIMS BHU is DST Centre for Interdisciplinary Mathematical Sciences. CIMS BHU is located at the Institute of Science, Banaras Hindu University (BHU), Varanasi - 221005, Uttar Pradesh, India. The Coordinator of CIMS BHU is Prof. Bankteshwar Tiwari. The official email of CIMS BHU is dstcims@gmail.com. The official phone number of CIMS BHU is 0542-2369337. The official webpage of CIMS BHU is https://www.bhu.ac.in/site/UnitHomeTemplate/1_233_3536_DST-Centre-for-Interdisciplinary-Mathematical-Sciences-Home
