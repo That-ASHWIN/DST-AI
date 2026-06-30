@@ -40,6 +40,7 @@ def is_refusal(text: str) -> bool:
 # demo never shows a broken link).
 # ---------------------------------------------------------------------------
 HOME_URL = "https://www.bhu.ac.in/site/UnitHomeTemplate/1_233_3536_DST-Centre-for-Interdisciplinary-Mathematical-Sciences-Home"
+PROGRAMME_URL = "https://www.bhu.ac.in/site/Programme/1_233_3537_DST-Centre-for-Interdisciplinary-Mathematical-Sciences-Programme"
 FACULTY_URL = "https://www.bhu.ac.in/site/FacultyList/1_233_3538_DST-Centre-for-Interdisciplinary-Mathematical-Sciences-Faculty"
 ADMISSION_URL = "https://admission.bhu.ac.in"
 RESEARCH_URL = "https://bhu.irins.org/faculty/index/DST+Centre+for+Interdisciplinary+Mathematical+Sciences"
@@ -49,10 +50,10 @@ RELATED_LINKS = {
     "faculty": ("DST-CIMS Faculty page", FACULTY_URL,
                 ["faculty", "professor", "teacher", "teachers", "staff",
                  "coordinator", "director", "head", "teaching", "mentor"]),
-    "courses": ("DST-CIMS Programmes & courses", HOME_URL,
-                ["course", "courses", "programme", "program", "m.sc", "msc",
-                 "syllabus", "subject", "subjects", "study", "degree", "phd",
-                 "ph.d"]),
+    "courses": ("DST-CIMS Programmes & courses", PROGRAMME_URL,
+                ["course", "courses", "programme", "programmes", "program",
+                 "m.sc", "msc", "syllabus", "subject", "subjects", "study",
+                 "degree", "phd", "ph.d", "duration"]),
     "admission": ("BHU Admission portal", ADMISSION_URL,
                   ["admission", "admissions", "eligibility", "apply", "entrance",
                    "cuet", "intake", "application", "qualify", "seat", "seats"]),
