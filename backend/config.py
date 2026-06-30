@@ -54,9 +54,9 @@ EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 # etc. are never split across chunks and retrieved incompletely).
 CHUNK_SIZE = 1200
 CHUNK_OVERLAP = 150
-# Retrieve a few sections so multi-part questions (e.g. faculty + contact) get
-# enough context.
-TOP_K_RESULTS = 4
+# Retrieve several sections so multi-part questions (e.g. faculty list, or
+# faculty + contact) reliably get the right section into context.
+TOP_K_RESULTS = 6
 
 # ==========================
 # SECURITY
